@@ -1,0 +1,67 @@
+<ion-header-bar class="bar-royal" id="title_top">
+    <button class="button button-clear">
+        <i class="icon ion-ios-arrow-left"></i>
+    </button>
+    <h1 class="title">我的银行卡</h1>
+</ion-header-bar>
+
+<ion-content>
+    <ion-list>
+        <ion-item class="item-avatar-left">
+            <img src="img/S16.fw.png" alt="">
+            <span class="col">
+                        建设银行 <br>
+                        储蓄卡
+                    </span>
+            <p class="row">
+                <span class="col">[默认]</span>
+                <span class="col now">**** **** **** 2177</span>
+            </p>
+        </ion-item>
+
+        <ion-item class="item-avatar-left">
+            <img src="img/S14.png" alt="">
+            <span class="col">
+                        工商银行 <br>
+                        储蓄卡
+                    </span>
+            <p class="row">
+                <span class="col">[设为默认]</span>
+                <span class="col now">**** **** **** 4699</span>
+            </p>
+        </ion-item>
+    </ion-list>
+    <button class="button button-clear button-dark button-full">添加银行卡</button>
+</ion-content>
+
+
+<style>
+    body {
+        background-color: #f2f2f2;
+    }
+
+    #title_top {
+        background-image: url("img/bg.fw.png");
+        background-size: cover;
+    }
+
+    ion-item.item-avatar-left.item {
+        background-image: url("img/bg_bank.png");
+        background-size: cover;
+        border-radius: 10px;
+        margin: 0.8rem 1rem 0 1rem;
+    }
+
+    ion-item.item-avatar-left.item p.row span.now {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    button.button.button-clear.button-dark {
+        color: #ccc;
+        border: 1px dashed #ccc;
+        width: 90%;
+        margin: 1.5rem auto;
+        border-radius: 5px;
+    }
+</style>

@@ -1,0 +1,154 @@
+<ion-header-bar class="order_top bar-dark">
+    <button href="" class="button button-icon">
+        <i class="icon ion-ios-arrow-left"></i>
+    </button>
+    <h1 class="title">KTV团购之家</h1>
+</ion-header-bar>
+
+<div class="col-center scanner">
+    <div class="row">
+        <button class="col-80 col-offset-10 button">验证序列号</button>
+    </div>
+    <div class="row">
+        <div class="button button-icon col-80 col-offset-10 button-royal">
+            <i class="icon ion-qr-scanner"></i>
+        </div>
+    </div>
+    <div class="text-center row" style="height: 40px;line-height: 40px;
+                background: rgba(0,0,0,.2);">
+            <span class="col-50">
+                <i class="icon ion-"></i>
+                账户余额 ￥888
+            </span>
+        <span style="color: #e0e0e0">
+                |
+            </span>
+        <span class="col-50">
+                <i class="icon ion-"></i>
+                今日订单 2
+            </span>
+    </div>
+</div>
+<div class="order_cont">
+    <div class="order_ztl">
+        <div class="row text-center">
+            <a href="" class="col-33">
+                <img src="img/tg_1.png" alt=""
+                     style="width: 2rem;height: 2rem">
+                &nbsp;订单管理
+            </a>
+            <span class="col-33"></span>
+            <a href="" class="col-33">
+                查看全部订单&nbsp;
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-80 col-offset-10">
+                <div class="row order_a">
+                    <a class="col order_dd"><img src="images/img/tg_3.png"><br/>
+                        <span class="badge badge-royal">2</span>
+                        待验证
+                    </a>
+                    <a class="col order_zt"><img src="images/img/tg_3.png"><br/>已验证</a>
+                    <a class="col order_wc"><img src="img/tg_4.png"><br/>已完成</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="list order_list">
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-email"></i>
+            购买设备
+        </a>
+    </div>
+    <div class="list">
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-email"></i>
+            我的银行卡
+        </a>
+    </div>
+    <div class="list">
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-email"></i>
+            我的店址
+        </a>
+    </div>
+</div>
+
+<ion-footer-bar>
+    <ion-tabs class="tabs-icon-top">
+        <ion-tab title="首页" icon-on="ion-ios-home"
+                 icon-off="ion-ios-home-outline">
+            <!-- 标签 1 内容 -->
+        </ion-tab>
+
+        <ion-tab title="消息" icon-on="ion-ios-bell"
+                 icon-off="ion-ios-bell-outline">
+            <!-- 标签 2 内容 -->
+        </ion-tab>
+
+        <ion-tab title="购物车" icon-on="ion-ios-cart"
+                 icon-off="ion-ios-cart-outline">
+            <!-- 标签 3 内容 -->
+        </ion-tab>
+    </ion-tabs>
+</ion-footer-bar>
+
+
+<style>
+    a {
+        text-decoration: none;
+        color: #000 !important;
+    }
+
+    body {
+        background-color: #f2f2f2;
+    }
+
+    .order_top {
+        background: rgba(0, 0, 0, .0) !important
+    }
+
+    .scanner {
+        padding-top: 44px;
+        background-image: url("img/top_bg.png");
+        background-size: cover;
+        background-color: #663399;
+        color: white;
+    }
+
+    .order_ztl {
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+        margin-top: 1rem;
+        background-color: #fff;
+    }
+
+    .order_list {
+        margin-top: 1.3rem;
+    }
+
+    a.order_dd img {
+        height: 1.6rem;
+    }
+
+    a.order_zt {
+        padding-top: 0.2rem;
+    }
+
+    .order_a a {
+        height: 75px;
+        padding: 0.7rem;
+        text-align: center;
+    }
+
+    a.order_zt img {
+        height: 1.6rem;
+    }
+
+    a.order_wc img {
+        height: 1.6rem;
+    }
+</style>

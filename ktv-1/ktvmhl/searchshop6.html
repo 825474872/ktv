@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<script type="text/javascript" src="js/lib/jquery-2.2.4.js">
+			
+		</script>
+		<style type="text/css">
+		body{
+			font-size: 12px;
+			
+		}
+		
+		.hea{
+		
+						background: url(images/imge/未命名-12.fw.png) no-repeat;
+		}
+		
+		.button{
+			background: none!important;
+			color: #fff!important;
+			
+		}
+		
+		.item-input-inset{
+			/*background: none!important;*/
+			background: rgba(255,255,255,0.3);
+		}
+		label{
+			position: relative;
+		}
+		input{
+			background: none!important;
+			
+		}
+#pla{
+	display: inline-block;
+	position: absolute;
+	left:43px;
+	top: 6px;
+	color: white;
+} 
+.cont{
+	text-align: center;
+}
+.cont img{
+	width: 85px;
+	margin-top: 80px;
+}
+.cont p{
+	color: #999;
+	margin-top:0px;
+}
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="hea">
+			
+    <label class="item-input-wrapper item-input-inset">
+        <i class="button button-clear icon icon-left ion-ios-search"></i>
+        <input type="search" class="sea"><span id="pla">
+请输入商家名        	
+        </span>
+    </label>
+    <button class="button button-clear">取消</button>
+		</ion-header-bar>
+		<ion-content class="cont">
+			<img src="images/imge/未命名-11.fw.png" />
+<p>没有任何搜索历史！</p>
+		</ion-content>
+		
+
+			   
+
+		<script type="text/javascript">
+		
+
+$(function(){
+	
+
+	$(".sea").click(function(){
+	
+		
+		$("#pla").css("display","none");
+	})
+})
+			var app=angular.module("myApp",["ionic"]);
+			app.controller("myCtrl",function(){
+				
+			})
+		</script>
+	</body>
+</html>

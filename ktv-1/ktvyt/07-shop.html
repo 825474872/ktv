@@ -1,0 +1,131 @@
+<ion-view>
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		box-sizing: border-box;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    	.bar-light{
+	    		width: 100%;
+	    		background-image: url(images/imgd/top.png)!important;
+	    		background: none;
+	    		background-repeat: no-repeat;
+	    		background-size: cover;
+	    	}
+	    	.dv{
+	    		width: 100%;
+	    		/*margin-top: 10px;*/
+	    		background: white;
+	    		overflow: hidden;
+	    	}
+	    	.list{
+	    		border: none;
+	    		overflow: hidden;
+	    		position: relative;
+	    		top: -20px;
+	    	}
+	    	.item{
+	    		border-left: none;
+	    		border-right: none;
+	    		border-top: none;
+	    		box-sizing: border-box;
+	    		margin-top: 1px;
+	    	}
+	    	.item p{
+	    		margin-top: 5px;
+	    	}
+	    	.item img{
+	    		max-width: 100px!important;
+	    		max-height: 100px!important;
+	    	}
+	    	.item ul li{
+	    		width: 33%;
+	    		height: 30px!important;
+	    		line-height: 30px;
+	    		float: left;
+	    		text-align: center;
+	    		border-left: 1px solid #ccc;
+	    		
+	    	}
+	    	.item ul li a{
+	    		width: 100%;
+	    		height: 30px!important;
+	    		line-height: 30px;
+	    		color: #ccc;
+	    		font-size: 16px;
+	    		text-align: center;
+	    		/*line-height: 20px;*/
+	    	}
+	    	.item ul li a select{
+	    		width: 66%;
+	    		height: 30px!important;
+	    		border: none;
+	    		background: none;
+	    		color: #ccc;
+	    		font-size: 16px;
+	    	}
+	    </style>
+
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="bar-light" align-title="center">
+			<button class="button button-clear" ui-sref="^.sy1"><i class="icon ion-ios-arrow-left" style="color: white!important;"></i></button>
+			<h1 class="title" style="color: white!important;">门票列表</h1>
+		</ion-header-bar>
+		<ion-content style="padding-top: 0;margin-top: 0;overflow: hidden;">
+			<div class="item" style="border-bottom: 1px solid #ccc;padding: 8px;">
+				<ul>
+					<li style="border: none;"><a href="">全部</a></li>
+					<li><a href="">
+							<select>
+								<option>价格排序</option>
+								<option>价格排序</option>
+								<option>价格排序</option>
+							</select>
+					</a></li>
+					<li><a href="">销量优先</a></li>
+					
+				</ul>
+			</div>
+			<div class="dv">
+				<div class="list list-inset">
+					<a href="" class="item item-thumbnail-left">
+		                <img src="images/imgd/b1.png" style="width:100px!important"/>
+						<p style="white-space: normal;line-height: 30px;color: black;font-size: 18px;margin-left: 20px;">要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+						<h2><span style="font-size: 24px; color: blueviolet;margin-left: 20px;">￥290</span><i class="item-note" style="float: right;line-height: 32px;">2015-08-14</i></h2>
+					</a>
+					<a href="" class="item item-thumbnail-left">
+		                <img src="images/imgd/b1.png" style="width:100px!important"/>
+						<p style="white-space: normal;line-height: 30px;color: black;font-size: 18px;margin-left: 20px;">要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+						<h2><span style="font-size: 24px; color: blueviolet;margin-left: 20px;">￥290</span><i class="item-note" style="float: right;line-height: 32px;">2015-08-14</i></h2>
+					</a>
+					<a href="" class="item item-thumbnail-left">
+		                <img src="images/imgd/b1.png" style="width:100px!important"/>
+						<p style="white-space: normal;line-height: 30px;color: black;font-size: 18px;margin-left: 20px;">要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+						<h2><span style="font-size: 24px; color: blueviolet;margin-left: 20px;">￥290</span><i class="item-note" style="float: right;line-height: 32px;">2015-08-14</i></h2>
+					</a>
+					<a href="" class="item item-thumbnail-left">
+		                <img src="images/imgd/b1.png" style="width:100px!important"/>
+						<p style="white-space: normal;line-height: 30px;color: black;font-size: 18px;margin-left: 20px;">要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+						<h2><span style="font-size: 24px; color: blueviolet;margin-left: 20px;">￥290</span><i class="item-note" style="float: right;line-height: 32px;">2015-08-14</i></h2>
+					</a>
+					<a href="" class="item item-thumbnail-left">
+		                <img src="images/imgd/b1.png" style="width:100px!important"/>
+						<p style="white-space: normal;line-height: 30px;color: black;font-size: 18px;margin-left: 20px;">要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+						<h2><span style="font-size: 24px; color: blueviolet;margin-left: 20px;">￥290</span><i class="item-note" style="float: right;line-height: 32px;">2015-08-14</i></h2>
+					</a>
+				</div>
+			</div>
+		</ion-content>
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope){
+			
+		})
+	</script>
+</ion-view>

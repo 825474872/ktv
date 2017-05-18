@@ -1,0 +1,192 @@
+
+    <style>
+        /*.bar-header{*/
+            /*background:rgba(0,0,0,.0);*/
+        /*}*/
+        body{
+            background: #f2f2f2;
+        }
+        .wqj-jiushi{
+            position: relative;
+            background-image: url("images/imgb/未命名-1.png");
+            background-size:100% 100%;
+        }
+        .bar-header h1{
+            color: white;
+        }
+        .bar button.button-clear{
+            color: #fff;
+        }
+        .bar button.button-clear img{
+            width:20px;
+            height:20px;
+            margin-right:5px;
+        }
+        .wqj-divrt{
+            width:200px;
+            height:210px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .wqj-divrt img{
+            width:80px;
+            height:80px;
+            margin-top:70px;
+        }
+        .wqj-divrt p{
+            color: #fff;
+        }
+        .wqj-smallimg1{
+            width:20px;
+            height:20px;
+            margin-left:20px;
+        }
+        .wqj-jiushi span{
+            color:white;
+            font-size: 16px;
+        }
+        .wqj-divre{
+            margin:0 auto;
+            width:300px;
+        }
+        .scroll-content{
+            position:absolute;
+
+
+        }
+        /*.has-header{*/
+                /*top:0*/
+        /*}*/
+        .wqj-piu9{
+            float: left;
+            width:110px;
+            height:60px;
+            text-align: center;
+        }
+        .wqj-piud1,.wqj-piud2{
+            margin-top:0px;
+        }
+        .wqj-img23{
+            width:30px;
+            height:30px;
+            
+        }
+        .wqj-piu9 img{
+            width:30px;
+            height:30px;
+
+        }
+        .wqj-rigsp{
+            float: right;
+            line-height: 36px;
+        }
+        .wqj-iuyj{
+            position: absolute;
+            top:23px;
+            left:60px;
+        }
+        .list{
+            margin-top:10px;
+        }
+    </style>
+       <ion-header-bar class="bar-balanced">
+           <button class="button ion-chevron-left button-clear"></button>
+           <h1 class="title">个人中心</h1>
+           <button class="button button-clear" ui-sref="^.xixi2"><img src="images/imgb/未命名-73.png" alt=""></button>
+       </ion-header-bar>
+       <ion-content>
+           <div class="wqj-jiushi">
+               <div class="wqj-divrt" ui-sref="^.wsgs">
+                   <img src="images/imgb/未命名-6.png" alt="" class="">
+                   <p>我是歌手</p>
+               </div>
+               <div class="wqj-divre">
+                   <img src="images/imgb/未命名-7.png" alt="" class="wqj-smallimg1">
+                   <span ui-sref="^.sj" >成为团购商家</span>
+                   <img src="images/imgb/未命名-8.png" alt="" class="wqj-smallimg1">
+                   <span ui-sref="^.kaidian">成为产品卖家</span>
+               </div>
+           </div>
+           <ion-list>
+               <ion-item ui-sref="^.tg">
+                   <img src="images/imgb/未命名-74.png" alt="" class="wqj-img23">
+                   <span class="wqj-iuyj">团购订单</span>
+                   <i class="ion-chevron-right wqj-rigsp"></i>
+
+                   <span class="wqj-rigsp">查看全部订单</span>
+               </ion-item>
+               <ion-item>
+                   <p ui-sref="^.dfk" class="wqj-piu9 wqj-piud1">
+                   <img src="images/imgb/未命名-75.png" alt=""><br>
+                   <span>代付款</span>
+                   </p>
+                   <p ui-sref="^.dsy"  class="wqj-piu9" ui-sref="^.dsy">
+                       <img src="images/imgb/未命名-76.png" alt=""><br>
+                       <span>代使用</span>
+                   </p>
+                   <p  ui-sref="^.dpj" class="wqj-piu9 wqj-piud2">
+                       <img src="images/imgb/未命名-77.png" alt=""><br>
+                       <span>代评价</span>
+                   </p>
+               </ion-item>
+           </ion-list>
+           <ion-list>
+               <ion-item ui-sref="^.tgqb">
+                   <img src="images/imgb/未命名-79.png" alt="" class="wqj-img23">
+                   <span class="wqj-iuyj">团商品订单</span>
+                   <i class="ion-chevron-right wqj-rigsp"></i>
+
+                   <span class="wqj-rigsp">查看全部订单</span>
+               </ion-item>
+               <ion-item>
+                   <p ui-sref="^.tgdfk"  class="wqj-piu9 wqj-piud1">
+                       <img src="images/imgb/未命名-75.png" alt=""><br>
+                       <span>代付款</span>
+                   </p>
+                   <p ui-sref="^.dsh" class="wqj-piu9">
+                       <img src="images/imgb/未命名-78.png" alt=""><br>
+                       <span>代收货</span>
+                   </p>
+                   <p ui-sref="^.tgpj" class="wqj-piu9 wqj-piud2">
+                       <img src="images/imgb/未命名-77.png" alt=""><br>
+                       <span>代评价</span>
+                   </p>
+               </ion-item>
+           </ion-list>
+           <ion-list>
+               <ion-item>
+                   <img src="images/imgb/未命名-80.png" alt="" class="wqj-img23">
+                   <span class="wqj-iuyj">我的卡券</span>
+               </ion-item>
+               <ion-item >
+                   <img src="images/imgb/未命名-81.png" alt="" class="wqj-img23">
+                   <span class="wqj-iuyj">我的约k</span>
+               </ion-item>
+               <ion-item ui-sref="^.shoucang">
+                   <img src="images/imgb/未命名-82.png" alt="" class="wqj-img23">
+                   <span class="wqj-iuyj">我的收藏</span>
+               </ion-item>
+               <ion-item>
+                   <img src="images/imgb/未命名-83.png" alt="" class="wqj-img23">
+                   <span class="wqj-iuyj">我的头条</span>
+               </ion-item>
+               <ion-item>
+                   <img src="images/imgb/未命名-84.png" alt="" class="wqj-img23">
+                   <span class="wqj-iuyj">我的关注</span>
+               </ion-item>
+           </ion-list>
+           <ion-list>
+               <ion-item ui-sref="^.addr" >
+                   <img src="images/imgb/未命名-85.png" alt="" class="wqj-img23">
+                   <span class="wqj-iuyj">收货地址</span>
+               </ion-item>
+               <ion-item ui-sref="^.set">
+                   <img src="images/imgb/未命名-86.png" alt="" class="wqj-img23">
+                   <span class="wqj-iuyj">设置</span>
+               </ion-item>
+
+           </ion-list>
+       </ion-content>
+        <script>
+            var app=angular.module("myApp",["ionic"])
+        </script>

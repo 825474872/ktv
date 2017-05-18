@@ -1,0 +1,86 @@
+
+    <style>
+        .bar .title.title-left{
+            color:white;
+            text-align: center;
+            right: 31px;
+        }
+        .news1{
+            background:url("images/imgb/未命名-16.png");
+            background-size:100%;
+        }
+        .news1 button img{
+            width:10px;
+            height:15px;
+        }
+        .title{
+            color:white;
+        }
+        body{
+            background: #f2f2f2;
+        }
+     .shopi img{
+         width:100%;
+     }
+        .item-input span:last-of-type{
+            color:#ccc
+        }
+        .bar .title{
+            font-size: 20px;
+        }
+        .footer1{
+            position: absolute;
+            bottom: 10px;
+            left:0px;
+        }
+       button.button-block{
+           border-radius:10px
+       }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+<ion-header-bar class=" news1">
+    <button ui-sref="^.grzx2" class="button button-clear"><img src="images/imgb/未命名-14.png" alt=""></button>
+    <h1 class="title">我要开店</h1>
+</ion-header-bar>
+<ion-content class="shopi">
+    <img src="images/imgb/未命名-37.png" alt="">
+    <ion-list>
+        <ion-item class="item-input">
+            <span>姓名</span>
+            <input type="text">
+            <span>填写真实姓名 </span>
+        </ion-item>
+        <ion-item class="item-input">
+            <span>电话</span>
+            <input type="text">
+            <span>点击完善 </span>
+        </ion-item>
+        <ion-item class="item-input">
+            <span>店铺名称</span>
+            <input type="text">
+            <span>点击完善 </span>
+        </ion-item>
+        <ion-item class="item-input">
+            <span>店铺地址</span>
+            <input type="text">
+            <span>点击完善 </span>
+        </ion-item>
+
+    </ion-list>
+
+
+</ion-content>
+    <div class="row">
+
+    <button class="button button-block button-royal footer1 col-80 col-offset-10" ng-click="refer()">提交</button>
+        
+    </div>
+<script>
+    var app=angular.module("myApp",["ionic"]);
+    app.controller("myCtrl",function ($scope,$ionicLoading,$timeout) {
+      
+    })
+</script>
+</body>
+</html>

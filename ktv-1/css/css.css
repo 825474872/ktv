@@ -1,0 +1,85 @@
+   body{
+			font-size: 13px;
+			
+		}
+	
+		.hea{
+		
+						background: url(../images/imge/未命名-12.fw.png) no-repeat;
+						color: white;
+						font-size: 16px;
+		}
+	
+		
+		 .mhl{
+
+			background: rgba(255,255,255,0.3);
+			position: relative;
+			
+		}
+		
+		.m2{
+			background: none!important;
+			
+		}
+#pla{
+	display: inline-block;
+	position: absolute;
+	left:43px;
+	top: 6px;
+	color: white;
+} 
+
+.ion-ios-arrow-right{
+	position: absolute;
+	right: 15px;
+}
+.la{
+	height: 350px;
+	border: none;
+}
+.ion-ios-sunny-outline{
+	font-size: 24px!important;
+	margin-left: 3%;
+}
+.ion-ios-chatbubble-outline{
+	font-size: 24px!important;
+	margin-left: 3%;
+}
+
+.m1 h4{
+	font-size: 14px;
+}
+.item h4{
+	font-size: 14px;
+}
+.m ul li{
+	color: #333;
+	font-size:11px ;
+}
+.m3 h2{
+	font-size: 13px;
+	color: #663399;
+}
+.m3 h2 span{
+	font-size: 18px!important;
+}
+#dis{
+	float: right;
+	font-size: 11px!important;
+	color:#999;
+}
+.m3 p{
+				color: #333;
+				font-size:13px!important;
+			}
+
+.jia{
+	font-size: 18px;
+	display: inline-block;
+	color: white;
+	position: absolute;
+	left: 20%;
+	bottom: 20%;
+}
+	

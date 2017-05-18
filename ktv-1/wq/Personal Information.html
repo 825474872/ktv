@@ -1,0 +1,65 @@
+<ion-view>
+    <style>
+        .bar .title.title-left{
+            color:white;
+            text-align: center;
+            right: 31px;
+        }
+        .news1{
+            background:url("images/imgb/未命名-16.png");
+            background-size:100%;
+        }
+        .news1 button img{
+            width:10px;
+            height:15px;
+        }
+        .title{
+            color:white;
+        }
+        body{
+            background: #f2f2f2;
+        }
+        div.popup-container.active .popup{
+            background:url("images/imgb/未命名-35.png");
+        border-radius:20px;
+        }
+        .popup-buttons .button{
+        }
+        h5{
+            color:white;
+        }
+        .bar .title{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+<ion-header-bar class=" news1">
+    <button class="button button-clear" ui-sref="^.grzx2"><img src="images/imgb/未命名-14.png" alt=""></button>
+    <h1 class="title">个人资料</h1>
+</ion-header-bar>
+<ion-content>
+    <ion-list>
+        <ion-item style="height: 70px;" ng-click="change1()">
+            <span style="float: left;margin-top: 10px;">头像</span>
+            <div style="float:right;margin-top: -5px;">
+            <img src="images/imgb/未命名-33.png" alt="" style="width:45px;height:45px;">
+            <img src="images/imgb/未命名-34.png" alt="" style="margin-bottom:12px">
+            </div>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item>
+            <span>昵称</span>
+            <span style="float:right;color: #999;">我是歌手</span>
+        </ion-item>
+        <ion-item ui-sref="^.xgmm">
+            <span>登录密码</span>
+            <span style="float:right;color: #999;">修改</span>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<script>
+    var app=angular.module("myApp",["ionic"]);
+</script>
+</ion-view>

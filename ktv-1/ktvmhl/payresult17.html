@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<style type="text/css">
+		body{
+			font-size: 13px;
+		}
+		
+		.hea{
+			height: 50px!important;
+			
+						background: url(images/imge/未命名-12.fw.png)no-repeat;
+		}
+		
+		.le{
+			background: none!important;
+			color: #fff!important;
+			
+		}
+		.title{
+			font-size: 18px!important;
+			color: #fff;
+
+			
+		}
+		.pay{
+			text-align: center;
+			font-size: 14px!important;
+		}
+			.ion-ios-arrow-right{
+				position: absolute;
+				right: 10px;
+				top: 20px;
+			}
+			.ion-happy-outline{
+				color: red;
+				width: 30px!important;
+				min-width: 30px;
+				font-size: 20px;
+				margin-right: 5px;
+			}
+			span{
+			position: absolute;
+			top: 18px;
+			right: 15px;
+			}
+			#ri{
+font-size: 12px;
+				color: #666;
+			}
+			p{
+				margin: 15px;
+				color: #000!important;
+			}
+			.gu{
+				background: none;
+				border: 1px solid #663399;
+				width: 150px;
+				color: #663399;
+				margin: 10px;
+			}
+			.dd{
+				background: #663399;
+				width: 150px;
+				color: white;
+				margin: 10px;
+				
+			}
+			
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="hea">
+			<i class="button icon  ion-ios-arrow-left le"></i>
+			<h3 class="title">支付结果</h3>
+		</ion-header-bar>
+		<ion-content class="cont">
+			
+		<ion-list>
+		 	<ion-item class="item-divider">
+		 		
+		 	</ion-item>
+  	<ion-item class="pay">
+  		<i class="icon ion-happy-outline"></i>支付成功
+  	</ion-item>
+  	<ion-item>
+  		<i class="icon"><img src="images/imge/未命名-22.fw.png" style="width: 20px;"/></i>
+  		麦嘎量贩式KTV
+  		<span id="ri">
+  			截止日期2016-04-14
+  		</span>
+  	</ion-item>
+  	<ion-item style="border: 0;">
+  		团购券1
+  		<span>0254 2418 1548</span>
+  	</ion-item>
+  	<ion-item style="border: 0;">
+  		团购券2
+  		<span>0254 2418 1547</span>
+  	</ion-item>
+  	<ion-item style="border: 0;text-align: center;">
+  		<img src="images/imge/未命名-23.fw.png" style="width: 105px;"/>
+  		<p>请店家扫描以上二维码验证</p>
+  	</ion-item>
+  		<ion-item class="item-divider" style="height: 250px;">
+		 		<button class="button gu">继续逛逛</button>
+		 		<button class="button dd" >查看订单</button>
+		 		
+		 	</ion-item>
+  	
+		</ion-list>
+
+			   
+		</ion-content>
+		<script type="text/javascript">
+			var app=angular.module("myApp",["ionic"]);
+			app.controller("myCtrl",function(){
+				
+			})
+		</script>
+	</body>
+</html>

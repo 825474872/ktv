@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<style type="text/css">
+		body{
+			font-size: 13px;
+		}
+		
+		.hea{
+			height: 50px!important;
+			
+						background: url(images/imge/未命名-12.fw.png)no-repeat;
+						background-size: cover;
+		}
+		
+		.le{
+			background: none!important;
+			color: #fff!important;
+			
+		}
+		.title{
+			font-size: 18px!important;
+			color: #fff;
+
+			
+		}
+		.pay{
+			text-align: center;
+			font-size: 14px!important;
+		}
+			.ion-ios-arrow-right{
+				position: absolute;
+				width: 30px;
+				right: 10px;
+				top: 20px;
+			}
+			a{
+				text-decoration: none;
+				font-size: 13px!important;
+				color: #999;
+				text-align: center;
+
+ 
+				display: inline-block;
+				width: 30%;
+				
+			}
+		
+			/*span{
+			
+			right: 15px;
+
+			}*/
+			p{
+				color: #333;
+				font-size:13px!important;
+			}
+			.line
+			{
+				background: url(images/imge/未命名-43.fw.png)0 -22px;
+				background-size: 100%;
+				width: 1px!important;
+				height: 40px;
+				position: absolute;
+			top: 13px;
+			color: #999;
+			font-size: 12px;
+				
+			}
+ .button.icon:before{
+	font-size: 25px!important;
+}
+#fou{
+	color:#f15a5a ;
+}
+h2{
+	font-size: 13px!important;
+	color: #663399;
+}
+h2 span{
+	font-size: 18px!important;
+}
+#dis{
+	float: right;
+	font-size: 11px;
+	color:#999;
+}
+.ion-android-arrow-dropdown{
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 3%;
+
+}
+
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="hea align-title">
+			<i class="button icon  ion-ios-arrow-left le"></i>
+			<h3 class="title align-title">团购</h3>
+		</ion-header-bar>
+		<ion-content class="cont">
+		<ion-list>
+			
+		<ion-item>
+			<a href="#" >全部</a><span class="line"></span>
+			<a href="#" ng-click="openModal()">附近<i class="icon ion-android-arrow-dropdown "></i></a><span class="line"></span>
+			<a href="#" ng-click="openModal2()">智能排序<i class="icon ion-android-arrow-dropdown "></i></a>
+		</ion-item>
+		
+		<ion-item class="item-thumbnail-left">
+                    <img src="images/imge/未命名-36.fw.png" style="width: 80px;"/>
+                    <h3>歌秀主题量贩KTV(农业路店)</h3>
+                    <img src="images/imge/未命名-38.fw.png" style="width: 72px;"/>
+                   <span id="fou">
+                   	4分
+                   </span>
+                   <h2>￥<span>29.9</span>起</h2>
+                   <span id="dis">
+                   	<500m
+                   </span>
+                </ion-item>
+                <ion-item class="item-thumbnail-left">
+                    <img src="images/imge/未命名-37.fw.png" style="width: 80px;"/>
+                    <h3>苏格缪斯KTV(酒吧一条街)</h3>
+                    <img src="images/imge/未命名-38.fw.png" style="width: 72px;"/>
+                   <span id="fou">
+                   	4分
+                   </span>
+                   <h2>￥<span>58</span>起</h2>
+                   <span id="dis">
+                   	<500m
+                   </span>
+                </ion-item>
+                <ion-item class="item-thumbnail-left">
+                    <img src="images/imge/未命名-39.fw.png" style="width: 80px;"/>
+                    <h3>最爱KTV(国贸店)</h3>
+                    <img src="images/imge/未命名-38.fw.png" style="width: 72px;"/>
+                   <span id="fou">
+                   	4分
+                   </span>
+                   <h2>￥<span>19</span>起</h2>
+                   <span id="dis">
+                   	<500m
+                   </span>
+                </ion-item>
+                <ion-item class="item-thumbnail-left">
+                    <img src="images/imge/未命名-41.fw.png" style="width: 80px;"/>
+                    <h3>糖果KTV(农业路店)</h3>
+                    <img src="images/imge/未命名-38.fw.png" style="width: 72px;"/>
+                   <span id="fou">
+                   	4分
+                   </span>
+                   <h2>￥<span>29.9</span>起</h2>
+                   <span id="dis">
+                   	<500m
+                   </span>
+                </ion-item>
+                <ion-item class="item-thumbnail-left">
+                    <img src="images/imge/未命名-36.fw.png" style="width: 80px;"/>
+                    <h3>歌秀主题量贩KTV(农业路店)</h3>
+                    <img src="images/imge/未命名-38.fw.png" style="width: 72px;"/>
+                   <span id="fou">
+                   	4分
+                   </span>
+                   <h2>￥<span>29.9</span>起</h2>
+                   <span id="dis">
+                   	<500m
+                   </span>
+                </ion-item>
+
+	
+		</ion-list>
+
+			   
+		</ion-content>
+		
+		
+
+		<script type="text/javascript">
+			var app=angular.module("myApp",["ionic"]);
+			    app.controller("myCtrl", function ($scope, $ionicModal) {
+        $ionicModal.fromTemplateUrl('templates/quanbu.html', {// modal窗口选项
+    scope: $scope,
+    animation: 'silde-in-up'
+}).then(function (modal) {
+     $scope.modal = modal;
+});
+        $scope.openModal = function() {
+    $scope.modal.show();
+  };
+    
+    
+     $ionicModal.fromTemplateUrl('templates/paixu.html', {// modal窗口选项
+    scope: $scope,
+    animation: 'silde-in-up'
+}).then(function (modal2) {
+     $scope.modal2 = modal2;
+});
+        $scope.openModal2 = function() {
+    $scope.modal2.show();
+  };
+    
+    
+    });
+		</script>
+	</body>
+</html>

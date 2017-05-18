@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	<!--<link rel="stylesheet" href="css/yt22.css" />-->
+	<script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: #F2F2F2;
+		}
+		a{text-decoration: none;}
+		li{list-style: none;}
+		i{font-style: normal;}
+		.yt-bar-light{
+			width: 100%;
+			background: orange!important;
+			border: none!important;
+		}
+		.yt-list{
+			border: none;
+			overflow: hidden;
+			position: relative;
+			top: -20px;
+			margin-top: 20px;
+		}
+		.yt-item1{
+			border-left: none;
+			border-right: none;
+			border-top: none;
+			box-sizing: border-box;
+			margin-top: 1px;
+			border-bottom: 1px solid #ccc;
+			padding: 4px;
+		}
+		.yt-item1 p{
+			margin-top: 5px;
+		}
+		.yt-item1 img{
+			max-width: 100px!important;
+			max-height: 100px!important;
+		}
+		.yt-item1 ul li{
+			width: 25%;
+			height: 30px!important;
+			line-height: 30px;
+			float: left;
+			text-align: center;
+
+
+		}
+		.yt-item1 ul li a{
+			width: 100%;
+			height: 20px!important;
+			display: inline-block;
+			line-height: 20px;
+			color: #ccc;
+			font-size: 14px;
+			text-align: center;
+			border-left: 1px solid #ccc;
+			/*line-height: 20px;*/
+		}
+		.yt-item1 ul li a select{
+			width: 55%;
+			height: 20px!important;
+			border: none;
+			background: none;
+			color: #000;
+			font-size: 14px;
+
+		}
+		/*搜索框*/
+		.yt-inset{
+			background: orange;
+			margin-top: -1px;
+		}
+		.yt-wrapper{
+			background: white;
+		}
+		/*********02**********/
+
+		.yt-item{
+			padding-top: 0;
+			padding-top: 10px;
+			padding-bottom: 0;
+			padding-bottom: 10px;
+		}
+		.yt-item_Left{
+			width: 30%;
+			height: 80px;
+			/*background: yellow;*/
+			float: left;
+			/*border-bottom: 1px solid #ccc;*/
+		}
+		.yt-item_Right{
+			width: 70%;
+			height: 110px;
+			/*background: blue;*/
+			/*border-bottom: 1px solid #ccc;*/
+			float: right;
+			padding-left: 10px;
+		}
+		.yt-item_Right h2{
+			width: 100%;
+			height: 30px;
+			line-height: 30px;
+			font-size: 14px;
+		}
+		.yt-item_Right h2 span{
+			float: left;
+		}
+		.yt-item_Right h2 a{
+			width: 25px;
+			height: 25px;
+			line-height: 23px;
+			color: white;
+			margin-top: 2px;
+			text-align: center;
+			margin-left: 5px;
+			border-radius: 20px;
+			border: 1px solid #ccc;
+			background: red;
+			display: block;
+			float: right;
+		}
+		/**************第二行*/
+		.yt-item_Right .yt-p_second{
+			width: 100%;
+			height: 20px;
+			line-height: 20px;
+			/*background: yellowgreen;*/
+		}
+		.yt-item_Right .yt-p_second .yt-r_ps1{
+			width: 120px;
+			height: 20px;
+			display: block;
+			margin-top: 2px;
+			float: left;
+		}
+		.yt-item_Right .yt-p_second .yt-r_ps2{
+			/*width: 60px;*/
+			height: 20px;
+			line-height: 20px;
+			float: right;
+			font-size: 14px;
+		}
+		/****************3*/
+		.yt-p_third{
+			width: 100%;
+			height: 30px;
+			line-height: 30px;
+		}
+		.yt-p_third span{
+			float: left;
+		}
+		.yt-p_third i{
+			float: right;
+		}
+		/**********************4*/
+		.yt-p_four{
+			width: 140px;
+			height: 24px;
+			border-radius: 15px;
+			border: 1px solid orange;
+			text-align: center;
+			line-height: 23px;
+			font-size: 12px!important;
+		}
+	</style>
+</head>
+<body ng-controller="myCtrl">
+<ion-header-bar class="yt-bar-light" align-title="center">
+	<button class="button button-clear"><i class="icon ion-ios-arrow-left" style="color: white"></i></button>
+	<h1 class="title" style="color: white">美食</h1>
+	<button class="button button-clear"><i class="icon ion-ios-person-outline" style="color: white;"></i></button>
+</ion-header-bar>
+<ion-content>
+	<div class="bar bar-header item-input-inset yt-inset">
+		<label class="item-input-wrapper yt-wrapper">
+			<i class="icon ion-ios-search placeholder-icon" style="color: orange;font-size: 24px;"></i>
+			<input type="search" value="搜索附近美食" style="color: orange;">
+		</label>
+	</div>
+	<div class="item yt-item yt-item1">
+		<ul>
+			<li>
+				<a href="" style="border: none;">
+					<select>
+						<option>菜系</option>
+						<option>价格排序</option>
+						<option>价格排序</option>
+					</select>
+				</a>
+			</li>
+			<li><a href="">
+				<select>
+					<option>范围</option>
+					<option>价格排序</option>
+					<option>价格排序</option>
+				</select>
+			</a></li>
+			<li>
+				<a href="">
+					<select>
+						<option>筛选</option>
+						<option>价格排序</option>
+						<option>价格排序</option>
+					</select>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<select>
+						<option>排序</option>
+						<option>价格排序</option>
+						<option>价格排序</option>
+					</select>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="list yt-list">
+		<div class="item yt-item item02">
+			<div class="yt-item_Left"><img src="images/imgd/f-3.png" class="full-image"/></div>
+			<div class="yt-item_Right">
+				<h2><span>舟友烤鱼</span><a href="" style="background: orange;">付</a><a href="">团</a></h2>
+				<p class="yt-p_second">
+					<span class="yt-r_ps1"><img src="images/imgd/f-1.png" class="full-image"/></span>
+					<span class="yt-r_ps2">人均<i>45元</i></span></p>
+				<p class="yt-p_third">
+					<span>川菜&nbsp;花园路</span>
+					<i>68m</i>
+				</p>
+				<p class="yt-p_four">4.8折起，388人已团购</p>
+			</div>
+		</div>
+		<!--*********************-->
+		<div class="item yt-item item02">
+			<div class="yt-item_Left"><img src="images/imgd/f-4.png" class="full-image"/></div>
+			<div class="yt-item_Right" style="height: 80px;">
+				<h2><span>舟友烤鱼</span><a href="" style="background: orange;">付</a><a href="">团</a></h2>
+				<p class="yt-p_second">
+					<span class="yt-r_ps1"><img src="images/imgd/f-1.png" class="full-image"/></span>
+					<span class="yt-r_ps2">人均<i>45元</i></span></p>
+				<p class="yt-p_third">
+					<span>川菜&nbsp;花园路</span>
+					<i>68m</i>
+				</p>
+				<!--<p class="p_four">4.8折起，388人已团购</p>-->
+			</div>
+		</div>
+		<!--*****************************-->
+		<div class="item yt-item item02">
+			<div class="yt-item_Left"><img src="images/imgd/f-5.png" class="full-image"/></div>
+			<div class="yt-item_Right">
+				<h2><span>舟友烤鱼</span><a href="" style="background: orange;">付</a><a href="">团</a></h2>
+				<p class="yt-p_second">
+					<span class="yt-r_ps1"><img src="images/imgd/f-1.png" class="full-image"/></span>
+					<span class="yt-r_ps2">人均<i>45元</i></span></p>
+				<p class="yt-p_third">
+					<span>川菜&nbsp;花园路</span>
+					<i>68m</i>
+				</p>
+				<p class="yt-p_four">4.8折起，388人已团购</p>
+			</div>
+		</div>
+		<!--*****************************-->
+		<div class="item yt-item item02">
+			<div class="yt-item_Left"><img src="images/imgd/f-6.png" class="full-image"/></div>
+			<div class="yt-item_Right" style="height: 80px;">
+				<h2><span>舟友烤鱼</span><a href="" style="background: orange;">付</a><a href="">团</a></h2>
+				<p class="yt-p_second">
+					<span class="yt-r_ps1"><img src="images/imgd/f-1.png" class="full-image"/></span>
+					<span class="yt-r_ps2">人均<i>45元</i></span></p>
+				<p class="yt-p_third">
+					<span>川菜&nbsp;花园路</span>
+					<i>68m</i>
+				</p>
+				<!--<p class="p_four">4.8折起，388人已团购</p>-->
+			</div>
+		</div>
+
+	</div>
+</ion-content>
+</body>
+<script>
+    var app=angular.module("myApp",["ionic"]);
+    app.controller("myCtrl",function($scope){
+
+    })
+</script>
+</html>

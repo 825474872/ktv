@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	    <script src="js/lib/jquery-1.9.0.min.js"></script>
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    	.bar-light{
+	    		width: 100%;
+	    		background-image: url(images/imgd/top.png)!important;
+	    		background: none;
+	    		background-repeat: no-repeat;
+	    		background-size: cover;
+	    	}
+	    	.dv{
+	    		background: #f2f2f2;
+	    		/*margin-top: 10px;*/
+	    	}
+	    	.list-inset{
+	    		margin-top: 10px;
+	    		padding-top: 0;
+	    		width: 100%;
+	    		margin: 10px auto;
+	    	}
+	    	.item-note{
+	    		font-size: 12px;
+	    	}
+	    	.item{
+	    		border-left: none;
+	    		border-right: none;
+	    		border-top: none;
+	    		box-sizing: border-box;
+	    		margin-left: 0;
+	    		margin: auto;
+	    		margin-top: 1px;
+	    		position: relative;
+	    		background: white;
+	    	}
+	    	.item-thumbnail-left{
+	    		margin: auto;
+	    	}
+	    	.item-thumbnail-left img{
+	    		float: left;
+	    	}
+	    	.item h2{
+	    		white-space: normal;
+	    		font-size: 12px;
+	    		}
+	    	.item h2 span{
+	    		float: right;
+	    	}
+	    	.item p{
+	    		margin-top: 5px;
+	    		white-space: normal;
+	    		font-size: 12px;
+	    	}
+	    	.lft{
+	    		margin-top: 10px;
+	    	}
+	    	/**********************/
+	    	.button1{
+	    		width: 75px;
+	    		height: 30px;
+	    		float: right;
+	    		height: 40px!important;
+	    		margin-top: 0;
+	    		padding-top: 0;
+	    		font-size: 14px;
+	    		position: absolute;
+	    		right: 0;
+	    		bottom: 0px;
+	    	}
+	    	/*tab切换部分*/
+	    	.list2{
+	    		margin: 0;
+	    		padding: 0;
+	    	}
+	    	.item2{
+	    		width: 100%;
+	    		height: 30px;
+	    		margin: 0;
+	    		padding: 0;
+	    		border: none;
+	    	}
+	    	.list2 .item2 ul li{
+	    		width: 25%;
+	    		height: 30px;
+	    		float: left;
+	    		line-height: 30px;
+	    		text-align: center;
+	    	}
+	    	.list2 .item2 ul li a{
+	    		width: 100%;
+	    		height: 20px;
+	    		display: inline-block;
+	    		line-height: 20px;
+	    		font-size: 14px;
+	    		border-left: 1px solid #ccc;
+	    		color: #5B5B5B;
+	    	}
+	    	/*a的被选中样式*/
+	    	.list2 .item2 ul li.active{
+	    		border-bottom: 1px solid blueviolet!important;
+	    	}
+	    	.list2 .item2 ul li.active a{
+	    		color: blueviolet;	
+	    	}
+	    </style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="bar-light" align-title="center">
+			<button class="button button-clear"><i class="icon ion-ios-arrow-left" style="color: white!important;"></i></button>
+			<h1 class="title" style="color: white!important;">招标信息</h1>
+			<button class="button button-clear" style="color: white!important;">发布</button>
+		</ion-header-bar>
+		
+		<ion-content class="dv">
+			<div class="list list2">
+				<div class="item item2">
+						<ul>
+							<li class="active"><a href="javascript:;" style="border: none;">音响</a></li>
+							<li><a href="javascript:;">麦克风</a></li>
+							<li><a href="javascript:;">灯光</a></li>
+							<li><a href="javascript:;">酒水</a></li>
+						</ul>
+					</div>
+			</div>
+				<div class="list list-inset">
+					
+					<a href="" class="item item-thumbnail-left lft">
+		                <img src="http://img2.imgtn.bdimg.com/it/u=1545067654,2257507606&fm=11&gp=0.jpg">
+						<i class="item-note" style="float: right;">2015-08-14</i>
+						<h2>怎样在KTV里用云K歌技巧</h2>	
+						<p>要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+						<button class="button button-clear button1">
+							<img src="images/imgd/d-12.png" class="full-image"/>
+						</button>
+					</a>
+					<a href="" class="item item-thumbnail-left">
+		                <img src="http://img2.imgtn.bdimg.com/it/u=1545067654,2257507606&fm=11&gp=0.jpg">
+						<i class="item-note" style="float: right;">2015-08-14</i>
+						<h2>怎样在KTV里用云K歌技巧</h2>	
+						<p>要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+						<button class="button button-clear button1">
+							<img src="images/imgd/d-12.png" class="full-image"/>
+						</button>
+					</a>
+					<a href="" class="item item-thumbnail-left">
+		                <img src="http://img2.imgtn.bdimg.com/it/u=1545067654,2257507606&fm=11&gp=0.jpg">
+						<i class="item-note" style="float: right;">2015-08-14</i>
+						<h2>怎样在KTV里用云K歌技巧</h2>	
+						<p>要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+						<button class="button button-clear button1">
+							<img src="images/imgd/d-12.png" class="full-image"/>
+						</button>
+					</a>
+					<a href="" class="item item-thumbnail-left">
+		                <img src="http://img2.imgtn.bdimg.com/it/u=1545067654,2257507606&fm=11&gp=0.jpg">
+						<i class="item-note" style="float: right;">2015-08-14</i>
+						<h2>怎样在KTV里用云K歌技巧</h2>	
+						<p>要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+						<button class="button button-clear button1">
+							<img src="images/imgd/d-12.png" class="full-image"/>
+						</button>
+					</a>
+					<a href="" class="item item-thumbnail-left">
+		                <img src="http://img2.imgtn.bdimg.com/it/u=1545067654,2257507606&fm=11&gp=0.jpg">
+						<i class="item-note" style="float: right;">2015-08-14</i>
+						<h2>怎样在KTV里用云K歌技巧</h2>	
+						<p>要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+						<button class="button button-clear button1">
+							<img src="images/imgd/d-12.png" class="full-image"/>
+						</button>
+					</a>
+					
+				</div>
+		</ion-content>
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope){
+			
+		})
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$(".list .item2 ul li").click(function(){
+				var dex=$(this).index()+1;
+//				alert(dex);
+				$(this).addClass("active").siblings("li").removeClass("active");
+				$(".list2 div").eq(dex).addClass("cosplay").siblings("div").removeClass("cosplay");
+		})
+		})
+	</script>
+</html>

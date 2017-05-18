@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    	.bar-light{
+	    		background: #E44BF1!important;
+	    	}
+	    	.list{background: white;}
+	    	.list .btn1{
+	    		width: 80px;
+	    		height: 40px;
+	    		background: #663399;
+	    		color: white;
+	    		min-height: 30px;
+	    		line-height: 40px;
+	    		font-size: 12px;
+	    		position: absolute;
+	    		right: 20px;
+	    		top: 20px;
+	    	}
+	    	.item{
+	    		width: 100%;
+	    		border:none;
+	    	}
+	    	.item1{
+	    		width: 100%;
+	    		margin-top: 10px;
+	    		padding-left: 16px;
+	    		padding-right: 10px;
+	    		font-size: 16px;
+	    	}
+	    	.item2{
+	    		width: 100%;
+	    		overflow: hidden;
+	    		}
+	    	.item2 img{
+	    		float: left;
+	    		width: 100px;
+	    		margin-left: 10px;
+	    		margin-top: 20px;
+	    		margin-bottom: 20px;
+	    	}
+	    	.nav1{
+	    		/*margin-bottom: 20px;*/
+	    		/*margin-top: 0;*/
+	    		/*padding-bottom: 0;*/
+	    		/*padding-top: 0;*/
+	    		margin-top: 1px;
+	    	}
+	    	.nav1 i{
+	    		line-height: 60px;
+	    	}
+	    	
+	    </style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="bar-light" align-title="center">
+			<button class="button button-clear"><i class="icon ion-ios-arrow-left" style="color: white!important;"></i></button>
+			<h1 class="title" style="color: white!important;">信息详情</h1>
+			<!--<button class="button button-clear">发布</button>-->
+		</ion-header-bar>
+		<ion-content>
+			<div class="list">
+				<div class="item item-avatar">
+					<img src="images/imgd/b2.png"/>
+					<h2>落月摇情、</h2>
+					<p>6分前</p>
+					<!--<button class="button btn1"><i class="icon ion-person-add"></i>&nbsp;&nbsp;报名</button>-->
+				</div>
+				<div class="item1">
+					晚上8点，酒吧一条街麦嘎KTV808房间，有神秘惊喜，不见不散！我的微信号：wechat0000
+				</div>
+				<div class="item2">
+					<img src="images/imgd/b1.png" style="margin-left: 16px;"/>
+					<img src="images/imgd/b1.png"/>
+					<img src="images/imgd/b1.png"/>
+				</div>
+			</div>
+			
+			<!--第二部分-->
+			<div class="list">
+				<div class="item" style="border-bottom: 1px solid #ccc;">
+					<i class="icon ion-person-add" style="font-size: 20px;color: red;"></i>&nbsp;&nbsp;已报名（2）
+				</div>
+				<a href="" class="item nav1" style="border-bottom: 1px solid #ccc;">
+					<img src="images/imgd/b2.png" style="float: left;"/>
+					<i class="item-note" style="float: left;margin-left: 10px;">失去方向的鱼</i>
+					<i class="item-note">8分钟前</i>
+					<p style="float: left;color: black;width: 100%;">加我一个！晚上8点左右会到！手机号：15963263598</p>
+				</a>
+				<a href="" class="item nav1" style="border-bottom: 1px solid #ccc;">
+					<img src="images/imgd/b2.png" style="float: left;"/>
+					<i class="item-note" style="float: left;margin-left: 10px;">会飞的鱼</i>
+					<i class="item-note">15分钟</i>
+					<p style="float: left;color: black;width: 100%;">联系我!微信号：15863255665</p>
+				</a>
+			</div>
+		</ion-content>
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope){
+			
+		})
+	</script>
+</html>

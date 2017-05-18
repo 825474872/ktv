@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<style type="text/css">
+		body{
+			font-size: 13px;
+		}
+		
+		.hea{
+			height: 50px!important;
+			
+						background: url(images/imge/未命名-12.fw.png)no-repeat;
+						background-size: cover;
+		}
+		
+		.le{
+			background: none!important;
+			color: #fff!important;
+			
+		}
+		.title{
+			font-size: 18px!important;
+			color: #fff;
+
+			
+		}
+		.pay{
+			text-align: center;
+			font-size: 14px!important;
+		}
+			.ion-ios-arrow-right{
+				position: absolute;
+				width: 30px;
+				right: 10px;
+				top: 20px;
+			}
+			a{
+				text-decoration: none;
+				font-size: 13px!important;
+				color: #999;
+				text-align: center;
+
+ 
+				display: inline-block;
+				width: 30%;
+				
+			}
+			#fi{
+				display: inline-block;
+				height: 43px;
+				line-height: 43px;
+				width: 30px;
+				background: url(images/imge/未命名-51.fw.png) no-repeat;
+				background-size: 100%;
+				float: right;
+				text-align: center;
+			}
+				#se{
+				display: inline-block;
+				height: 43px;
+				line-height: 43px;
+				width: 230px;
+				background: url(images/imge/未命名-46.fw.png) no-repeat;
+				background-size: 100%;
+				/*float: right;*/
+				text-align: center;
+			}
+	.fa{
+		background: #D6D6D6;
+	}
+.item-input-wrapper{
+		background: #D6D6D6;
+	
+}
+.bu{
+	color: #fff;
+	background-color:#663399;
+}
+.ion-ios-plus-outline{
+	background: #fff;
+}
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="hea align-title" style="text-align: center;">
+			<i class="button icon  ion-ios-arrow-left le"></i>
+			<h3 class="title align-title">皇声音响</h3>
+		</ion-header-bar>
+		<ion-content class="cont">
+		<ion-list>
+			
+	<ion-item style="text-align: center;border: none;color: #666;">
+		2-24 16:06
+	</ion-item>
+<ion-item class="item-avatar-right" style="border: none;">
+	<img src="images/imge/未命名-49.fw.png"/><span id="fi">?</span>
+</ion-item>
+<ion-item class="item-avatar-left" style="border: none;">
+	<img src="images/imge/未命名-34.fw.png"/><span id="se">您好，有什么可以帮助您的吗?</span>
+</ion-item>
+			   
+		</ion-content>
+		
+		<ion-footer-bar>
+			<i class="button  icon icon-left ion-ios-plus-outline"></i>
+	<label class="item-input-wrapper ">
+        
+        <input type="text" class="fa">
+    </label>
+    <button class="button bu " >发送</button>
+</ion-footer-bar>
+
+		<script type="text/javascript">
+			var app=angular.module("myApp",["ionic"]);
+			    app.controller("myCtrl", function ($scope, $ionicModal) {
+ 
+    
+    });
+		</script>
+	</body>
+</html>

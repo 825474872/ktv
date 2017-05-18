@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<style type="text/css">
+			body{
+				background: url(img/bgw.fw.png);
+				background-size: 100%;
+				box-sizing: border-box!important;
+			}
+			.cont{
+				width: 80%;
+				height: 500px;
+				margin: 180px auto;
+			}
+			.paw{
+/*				margin-top: 30px;*/
+				}
+			.use img{
+				width: 20px;
+				vertical-align: middle;
+				
+			}
+			.paw img{
+				width: 20px;
+				vertical-align: middle;
+			}
+			.item{
+				border-radius: 50px;
+				
+			}
+			.button-block{
+				border-radius: 50px;
+			}
+			.input-label{
+				width: auto;
+			}
+			.item-input{
+			margin-bottom: 30px;}
+			.button{
+				margin-top: 50px!important;
+				background: #663399!important;
+				color: #fff!important;
+			}
+			a{
+				color: #fff;
+				text-decoration: none;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-content class="cont">
+			
+			
+		<ion-list>
+			
+
+			     <label class="item item-input">
+    <span class="input-label use"><img src="img/未命名-3.fw.png"/></span>
+    <input type="text" placeholder="请输入手机号">
+</label>
+<label class="item item-input">
+    <span class="input-label paw"><img src="img/未命名-4.fw.png"/></span>
+    <input type="password" placeholder="请输入密码">
+</label>
+				
+				<button class="button button-block">登录</button>
+				<a href="#" style="float: left;">免费注册</a>
+				<a href="#" style="float: right;">忘记密码?</a>
+				
+</ion-list>				
+		</ion-content>
+		<script type="text/javascript">
+			var app=angular.module("myApp",["ionic"]);
+			app.controller("myCtrl",function(){
+				
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<style type="text/css">
+		
+		.hea{
+						background: url(img/未命名-12.fw.png);
+		}
+		
+		.button{
+			background: none!important;
+			color: #fff!important;
+			
+		}
+		.title{
+			color: #fff;
+		}
+		a{
+		height: 60px;
+        line-height: 30px;
+        position: relative;
+		}
+		.item h2{
+			font-size: 13px;
+		}
+		.item p{
+			font-size: 12px;
+		}
+		{
+		min-width: 50px!important;	
+		min-height: 50px!important;
+		}
+		span{
+				float: right;
+				position: absolute;
+				
+				right: 15px;
+				color: #999;
+				
+			}
+			.ion-ios-arrow-right{
+				position: absolute;
+				right: 5px;
+				top: 20px;
+			}
+			.item-thumbnail-left > img:first-child,
+  .item-thumbnail-left .item-image,
+  .item-thumbnail-left .item-content > img:first-child,
+  .item-thumbnail-left .item-content .item-image {
+   
+    max-width: 50px!important;
+    max-height: 50px!important;
+ 
+    }
+    .item-thumbnail-left, .item-thumbnail-left .item-content {
+    padding-top: 8px;
+    padding-left: 70px!important;
+    min-height: 70px;
+}
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="hea">
+			<i class="button icon  ion-ios-arrow-left"></i>
+			<h1 class="title">消息</h1>
+		</ion-header-bar>
+		<ion-content class="cont">
+			
+		<ion-list>
+	  <a class="item item-thumbnail-left" href="#">
+                <img src="img/未命名-5.fw.png" class="">
+                <h2>皇声音响<span id="">
+                	2016-2-22
+                </span></h2>
+                <p>您好，有什么可以帮助您的？</p>
+                
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="img/未命名-6.fw.png">
+                <h2>德荣盛电器专营店<span id="">
+                	2016-2-22
+                </span></h2>
+                <p>那个单子还不错，你也看看吧？</p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="img/未命名-7.fw.png">
+                <h2>同兴达电器专营店<span id="">
+                	2016-2-21
+                </span></h2>
+                <p>好的，我会尽快发货的！</p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="img/未命名-9.fw.png">
+                <h2>cass凯狮专营店<span id="">
+                	2016-2-20
+                </span></h2>
+                <p>好的！</p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="img/未命名-10.fw.png">
+                <h2>优赞酒类专营店<span id="">
+                	2016-2-19
+                </span></h2>
+                <p>你说的这俩种都有，价格也是最低的了！</p>
+            </a>
+		</ion-list>
+
+			   
+		</ion-content>
+		<script type="text/javascript">
+			var app=angular.module("myApp",["ionic"]);
+			app.controller("myCtrl",function(){
+				
+			})
+		</script>
+	</body>
+</html>

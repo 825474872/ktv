@@ -1,0 +1,176 @@
+<ion-view>
+    <style>
+        .news1{
+            background:url("images/imgb/未命名-16.png");
+            background-size:100%;
+        }
+        .news1 button img{
+            width:10px;
+            height:15px;
+        }
+        .bar .title{
+            color:white;
+            font-size: 20px;
+        }
+        .bar .title.title-left{
+
+            text-align: center;
+            right: 31px;
+        }
+        body{
+            background: #f2f2f2;
+        }
+        .divre{
+            width:40%;
+            margin: 0 auto;
+            position: relative;
+            margin-top: 10px;
+
+        }
+        .divre img{
+            width:30px;
+            height:30px;
+        }
+        .divre span{
+            font-size: 17px;
+            color: #639;
+            position: absolute;
+            top:9px;
+            right:5px;
+
+        }
+        .wqdsy .item p{
+            white-space: normal;
+            padding-left: 100px;
+        }
+       .wqdsy  .item p.py6{
+            padding:0;
+        }
+       .wqdsy  .spane23{
+            float: right;
+        }
+       .wqdsy  .item h2{
+            white-space: normal;
+            padding-left: 100px;
+        }
+        .wqdsy .spanew{
+            float: right;
+            color: #639;
+        }
+      .wqdsy   .list{
+            margin-top:16px;
+        }
+       .wqdsy  .yui{
+            width:20px;
+            height:20px;
+            margin-top:5px;
+        }
+        .wqdsy .yuio{
+            float: right;
+            border:1px solid #666;
+            border-radius: 10px;
+            margin-right:15px;
+        }
+       .wqdsy  .imgr2{
+            width:350px;
+            height:257px
+        }
+        .wqdsy .item{
+            padding: 10px;
+        }
+        .wqdsy .ion3{
+            width:250px;
+            height:200px;
+        }
+    </style>
+
+<ion-header-bar class=" news1">
+    <button ui-sref="^.grzx2" class="button button-clear"><img src="images/imgb/未命名-14.png" alt=""></button>
+    <h1 class="title">订单详情</h1>
+</ion-header-bar>
+<ion-content class="wqdsy" >
+    <div class="divre">
+        <img src="images/imgb/未命名-48.png" alt="">
+        <span>等待买家收货</span>
+    </div>
+    <ion-list>
+        <ion-item>
+            <p class="py6">收货人：小美 <span class="spane23">18076542874</span></p>
+            <p class="py6">收货地址：河南郑州市金水区花园路与金水路交叉口招银
+                大厦1808</p>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item class="item-thumbnail-left">
+            <img src="images/imgb/未命名-30.png" alt="" class="imgfr">
+            <h2 class="h21">撼森点歌机家庭用KTV高清触摸屏卡
+                拉ok点唱机一体机套装</h2>
+            <p>数量：X1</p>
+            <p>￥299</p>
+        </ion-item>
+        <ion-item>
+            <p >优惠券 <span class="spanew">-5元</span></p>
+        </ion-item>
+        <ion-item>
+            <p >买家留言：无</p>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item>
+            <p >订单总价 <span class="spanew">￥294</span></p>
+        </ion-item>
+    </ion-list>
+    <ion-list class="uiy">
+        <ion-item>
+            <img src="images/imgb/未命名-4.png" alt="" class="yui">
+            <span class="dd">订单详情</span>
+            <hr>
+            <p class="py6">订单编号：15218040392654</p>
+            <p class="py6">支付方式：支付宝</p>
+            <p class="py6">下单时间：2015-05-02 17:06:25</p>
+            <p class="py6">付款时间：2015-05-02 17:06:25</p>
+            <p class="py6">配送方式：韵达快递</p>
+            <p class="py6">快递单号：25F12055421</p>
+
+
+
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item>
+            <button class="button button-royal yuio" ng-click="fk2()">确认收货</button>
+            <button class="button yuio">查看物流</button>
+        </ion-item>
+    </ion-list>
+
+
+
+</ion-content>
+<script>
+    var app=angular.module("myApp",["ionic"]);
+    app.controller("myCtrl",function ($scope,$ionicPopup,$ionicLoading,$timeout) {
+        $scope.fk2=function () {
+            $ionicPopup.show({
+                template: '<input type="password" ng-model="data.wifi">',
+                title: '请输入支付密码',
+                scope: $scope,
+                buttons: [
+                    { text: '取消' },
+                    {
+                        text: '<b>确认</b>',
+                        type: 'button-positive',
+                    },
+                ]
+            });
+        }
+        $scope.scd=function () {
+            $ionicLoading.show({
+                template: '<img src="images/imgb/未命名-72.png" alt=""><br><span>删除成功</span>'
+            });
+            $timeout(function () {
+                $ionicLoading.hide()
+            },2000)
+        }
+    })
+</script>
+</ion-view>

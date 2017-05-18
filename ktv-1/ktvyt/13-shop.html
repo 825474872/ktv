@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	    <script src="js/lib/jquery-1.9.0.min.js"></script>	    
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		box-sizing: border-box;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    			box-sizing: border-box;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    	.bar-light{
+	    		width: 100%;
+	    		background-image: url(images/imgd/top.png)!important;
+	    		background: none;
+	    		background-repeat: no-repeat;
+	    		background-size: cover;
+	    	}
+	   		.row{
+	   			text-align: center;
+	   			background: white;
+	   			margin-top: 10px;
+	   			border: none;
+	   			padding-top: 0;
+	   			padding-bottom: 0;
+	   			height: 130px;	
+	   		}
+	   		.row img{
+	   			height: 58px!important;
+	   		}
+	   		.row1{
+	   			border: none;
+	   			/*border-bottom: 1px solid #ccc;*/
+	   		}
+	   		.row2{
+	   			/*margin-top: 1px!important;*/
+	   			border-bottom:none;
+	   			border: none;
+	   			}
+	   		.row1 .col:nth-child(1){
+	   			border-bottom: 1px solid #ccc;
+	   		}	
+	   		.row1 .col:nth-child(2){
+	   			border-left: 1px solid #ccc;
+	   			border-bottom: 1px solid #ccc;
+	   		}
+	   		.row1 .col{
+	   			padding-top: 20px;
+	   		}
+	    </style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="bar-light" align-title="center">
+			<button class="button button-clear"><i class="icon ion-ios-arrow-left" style="color: white!important;"></i></button>
+			<h1 class="title" style="color: white!important;">下一站</h1>
+		</ion-header-bar>
+		<ion-content>
+			<div class="list">
+				<div class="row row1">
+		            <div class="col">
+		            	<img src="images/imgd/d-8.png"/><br />打车回家
+		            </div>
+		            <div class="col">
+		            	<img src="images/imgd/d-6.png"/><br />附近酒店 	
+		            </div>
+        		</div>
+        		<div class="row row1 row2">
+		            <div class="col" style="border-bottom: none;">
+		            	<img src="images/imgd/d-5.png"/><br />需要代驾
+		            </div>
+		            <div class="col" style="border-bottom: none;">
+		            	<img src="images/imgd/d-4.png"/><br />附近夜宵	
+		            </div>
+        		</div>
+			</div>
+		</ion-content>
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope,$ionicPopup){
+			$scope.show = function() {
+            $ionicPopup.show({
+                templateUrl:"template/shop.html",
+                scope:$scope,
+                buttons:[
+                    {text:"取消", type:"button-stable"}
+                ]
+            });
+        }
+		})
+	</script>
+	<script>
+		$(function(){
+			$(".list2 .item2 ul li").click(function(){
+				var dex=$(this).index()*3+1;
+//				alert(dex);
+				$(this).addClass("active").siblings("li").removeClass("active");
+				$(".list2 div").eq(dex).addClass("cosplay").siblings("div").removeClass("cosplay");
+		})
+			
+			
+			
+		})
+	</script>
+</html>

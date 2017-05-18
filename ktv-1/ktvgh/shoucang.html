@@ -1,0 +1,242 @@
+
+    <style>
+
+        a{
+            text-decoration: none;
+        }
+        .bat_top{
+            background: url("images/imgh/1.png")!important;
+            background-size: 100%!important;
+            align-title:center;
+        }
+        .content_nav{
+            width: 90%;
+            margin: auto;
+            border-radius: 0.05rem;
+            border: 0.01rem solid #639;
+            padding: 0;
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+        .content_nav a{
+            padding: 0.1rem 0;
+            font-size: 0.3rem;
+            text-align: center;
+            color: #639;
+        }
+        .nowNav{
+            background: #639;
+            color: #fff!important;
+        }
+        ion-item div{
+            font-size: 0.2rem;
+            white-space: normal;
+            margin-bottom: 0.1rem;
+        }
+        ion-item img{
+            width: 1.8rem;
+            height: 1.8rem;
+
+        }
+        ion-item .divImg{
+            margin-right: 0.2rem;
+            float: left;
+        }
+        ion-item .div2{
+            font-size: 0.3rem;
+            padding: 1% 0;
+        }
+        ion-item .div3{
+            font-size: 0.2rem;
+            padding: 1% 0;
+            vertical-align: sub;
+            line-height: 0.25rem;
+        }
+        ion-item .div4 .span_1{
+            color: #639;
+            padding: 1% 0;
+        }
+        ion-item .div4 .span_2{
+            color: #639;
+            font-size: 0.4rem;
+        }
+        ion-item .div4 .span_3{
+            color: #999;
+            margin-left: 0.1rem;
+        }
+        ion-item  .spanRight{
+            float: right;
+            font-size: 0.2rem;
+            color: #999;
+        }
+        .item.item-checkbox.ng-valid{
+            border-width: 0;
+            padding-left: -0.1rem;
+            margin-left: -0.1rem;
+        }
+        .bar.bar-footer{
+            padding: 0;
+        }
+        .bar.bar-footer .button_1{
+            width: 35%;
+        }
+        .bar.bar-footer .button_1 label{
+            text-align: center;
+            border-width: 0;
+        }
+        .bar.bar-footer .button_2{
+            width: 65%;
+            background: #639;
+            color: #fff;
+        }
+        .bar.bar-footer .button_2 button{
+            background: #639;
+            color: #fff;
+        }
+        .scroll-content .checkbox-icon{
+            margin-left: -0.15rem;
+        }
+    </style>
+
+<body ng-controller="myCtrl">
+<ion-header-bar class="bat_top bar bar-royal">
+    <button ui-sref="^.us"  class="button button-clear"><i class="icon ion-ios-arrow-left"></i></button>
+    <h1 class="title">我的收藏</h1>
+    <button class="buttop button button-clear" ng-click="showcomp()">编辑</button>
+    <!--<button class="buttop2 button button-clear" ng-click="showcomp()">取消</button>-->
+</ion-header-bar>
+<ion-content>
+    <div class="content_nav row">
+        <a class="nowNav col">团购（4）</a>
+        <a class="col">商品（8）</a>
+    </div>
+    <!--写入删除按钮 show-delete="showDeleteIcons"-->
+    <ion-list class="listt" show-delete="showDeleteIcons">
+        <ion-item class="itemm">
+            <!--多选按钮-->
+            <!--<ion-checkbox ng-model="filter.blue">Red</ion-checkbox>-->
+            <!--原始删除图标-->
+            <!--<ion-delete-button class="ion-minus-circled"></ion-delete-button>-->
+            <!--结合使用     复选按钮-->
+            <ion-delete-button>
+                <ion-checkbox ng-model="filter.blue"></ion-checkbox>
+            </ion-delete-button>
+
+            <div class="divImg"><img src="images/imgh/15.jpg" alt=""></div>
+            <div class="div2">最爱KTV<span class="spanRight"><500m</span></div>
+            <div class="div3">仅售19元，价值166元4小时下午场/5小时午夜
+                场2选1欢唱券+美食套餐！
+            </div>
+            <div class="div4">
+                <span class="span_1">￥</span>
+                <span class="span_2">19</span>
+                <s class="span_3">￥166</s>
+                <span class="spanRight">已售123</span>
+            </div>
+        </ion-item>
+        <ion-item class="itemm">
+            <!--复选按钮-->
+            <ion-delete-button><ion-checkbox ng-model="filter.blue"></ion-checkbox></ion-delete-button>
+            <div class="divImg"><img src="images/imgh/16.jpg" alt=""></div>
+            <div class="div2">最爱KTV<span class="spanRight"><500m</span></div>
+            <div class="div3">仅售19元，价值166元4小时下午场/5小时午夜
+                场2选1欢唱券+美食套餐！
+            </div>
+            <div class="div4">
+                <span class="span_1">￥</span>
+                <span class="span_2">78</span>
+                <s class="span_3">￥361</s>
+                <span class="spanRight">已售123</span>
+            </div>
+        </ion-item>
+        <ion-item class="itemm">
+            <!--复选按钮-->
+            <ion-delete-button><ion-checkbox ng-model="filter.blue"></ion-checkbox></ion-delete-button>
+            <div class="divImg"><img src="images/imgh/17.jpg" alt=""></div>
+            <div class="div2">最爱KTV<span class="spanRight"><500m</span></div>
+            <div class="div3">仅售19元，价值166元4小时下午场/5小时午夜
+                场2选1欢唱券+美食套餐！
+            </div>
+            <div class="div4">
+                <span class="span_1">￥</span>
+                <span class="span_2">26.9</span>
+                <s class="span_3">￥158</s>
+                <span class="spanRight">已售123</span>
+            </div>
+        </ion-item>
+        <ion-item class="itemm">
+            <!--复选按钮-->
+            <ion-delete-button><ion-checkbox ng-model="filter.blue"></ion-checkbox></ion-delete-button>
+            <div class="divImg"><img src="images/imgh/18.jpg" alt=""></div>
+            <div class="div2">最爱KTV<span class="spanRight"><500m</span></div>
+            <div class="div3">仅售19元，价值166元4小时下午场/5小时午夜
+                场2选1欢唱券+美食套餐！
+            </div>
+            <div class="div4">
+                <span class="span_1">￥</span>
+                <span class="span_2">254</span>
+                <s class="span_3">￥768</s>
+                <span class="spanRight">已售123</span>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer-bar class="foott">
+    <div class="button_1"><ion-checkbox>全选</ion-checkbox></div>
+    <div class="button_2"><button class="button button-full button-clear">删除</button></div>
+</ion-footer-bar>
+</body>
+
+
+
+<script>
+    var app=angular.module("myApp",["ionic"]);
+    app.controller("myCtrl",["$scope",function ($scope) {
+        //显示删除按钮
+        $scope.showDeleteIcons = false;
+        $(".foott").hide()
+
+        $scope.showcomp=function () {
+            $scope.showDeleteIcons = !$scope.showDeleteIcons;
+            $(".foott").toggle();//底部全选删除 出现和隐藏
+
+        }
+
+
+//        ******    jquery    *****
+        $(".button_1").click(function () {
+            var t=$("input").prop("checked");
+
+            if(t==true){
+                $("input").prop("checked",false);
+            }else if(t==false) {
+                $("input").prop("checked",true);
+            }
+
+// 测试用***********************************************************
+            var inp=$(".ng-untouched").length;//复选框的长度
+            for( var i=0;i<inp;i++){
+                var check=$("input").eq(i).prop("checked")
+                if(check==true){
+                    console.log("测试用-全选---第"+i+"个被选中")
+                }
+            }
+// ************************************************************
+        })
+
+        $(".button_2").click(function () {
+            var inp=$(".ng-untouched").length;//复选框的长度
+            for( var i=0;i<inp;i++){
+                var check=$("input").eq(i).prop("checked")
+                if(check==true){
+                   console.log("测试用-删除*************---第"+i+"个被选中")
+                   $(".itemm").eq(i).hide();
+
+               }
+            }
+
+
+        })
+
+    }])
+</script>

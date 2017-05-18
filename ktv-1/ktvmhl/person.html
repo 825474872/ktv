@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<style type="text/css">
+		
+		.hea{
+						background: url(img/未命名-12.fw.png)no-repeat;
+		}
+		
+		.button{
+			background: none!important;
+			color: #fff!important;
+			
+		}
+		.title{
+			color: #fff;
+		}
+		a{
+		height: 60px;
+        line-height: 30px;
+        position: relative;
+		}
+		span{
+				float: right;
+				position: absolute;
+				top: 20px;
+				right: 25px;
+				color: #999;
+				
+			}
+			.ion-ios-arrow-right{
+				position: absolute;
+				right: 5px;
+				top: 20px;
+			}
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="hea">
+			<i class="button icon  ion-ios-arrow-left"></i>
+			<h3 class="title">个人资料</h3>
+		</ion-header-bar>
+		<ion-content class="cont">
+			
+		<ion-list>
+		 	
+  	<a href="#" class="item  item-avatar-right"style="height: 30px;"  >
+  		头像
+  		
+  		
+			 		<img src="img/未命名-18.fw.png" style="float: right;"/>
+                <i class="icon ion-ios-arrow-right" ></i>
+			 		
+			 		
+			 	</a>
+			 	<a class="item  item-icon-right" href="#">
+                
+               昵称
+                <span id="">
+                我是歌手
+                </span>
+            
+            </a>
+            <a class="item  item-icon-right" href="#">
+                
+               登录密码
+                <span id="">
+                	修改
+                </span>
+                
+            </a>
+		</ion-list>
+
+			   
+		</ion-content>
+		<script type="text/javascript">
+			var app=angular.module("myApp",["ionic"]);
+			app.controller("myCtrl",function(){
+				
+			})
+		</script>
+	</body>
+</html>

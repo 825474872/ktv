@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	    <script src="js/lib/jquery-1.9.0.min.js"></script>	    
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		box-sizing: border-box;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    			box-sizing: border-box;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    	.bar-light{
+	    		width: 100%;
+	    		/*background-image: url(images/imgd/top.png)!important;*/
+	    		background: none;
+	    		background: #F2F2F2!important;
+	    		/*background-repeat: no-repeat;
+	    		background-size: cover;*/
+	    		position: relative;
+	    	}
+	   		.clear{
+	   			position: absolute;
+	   			left: 50%;
+	   			transform: translate(-50%);
+	   		}
+	   		.col{
+	   			text-align: center;
+	   			padding-bottom: 0;
+	   			padding-top: 0;
+	   			height: 25px;
+	   			line-height: 25px;
+	   			
+	   		}
+	   		.active{
+	   			background: white;
+	   			border-radius: 15px;
+	   			color: orange;
+	   		}
+	   		/*地图部分*/
+	   		.list{
+	   			background: #F2F2F2!important;
+	   		}
+	   		.item2{
+	   			width: 100%!important;
+	   			padding-left: 0;
+	   			padding-right: 0;
+	   			margin-left: 0;
+	   			margin-right: 0;
+	   			background: #F2F2F2!important;
+	   			border: none;
+	   		}
+	    </style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="bar-light">
+			<button class="button button-clear">
+				<i class="icon ion-person"></i>
+			</button>
+			<button class="button button-clear clear">
+				<i class="icon ion-location"></i>
+			</button>
+			<button class="button button-clear">
+				<i class="icon ion-ios-bell-outline"></i>
+			</button>
+		</ion-header-bar>
+		<ion-content>
+			<div class="row row1">
+				<div class="col active">顺风车</div>
+				<div class="col">快车</div>
+				<div class="col">出租车</div>
+				<div class="col">专车</div>
+				<div class="col">代驾</div>
+				<div class="col">试驾</div>
+			</div>
+			<div class="list">
+				<div class="item item2">
+					<img src="images/imgd/d-9.png" class="full-image"/>
+				</div>
+			</div>
+			
+		</ion-content>
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope,$ionicPopup){
+			$scope.show = function() {
+            $ionicPopup.show({
+                templateUrl:"template/shop.html",
+                scope:$scope,
+                buttons:[
+                    {text:"取消", type:"button-stable"}
+                ]
+            });
+        }
+		})
+	</script>
+	<script>
+		$(function(){
+			$(".row .col").click(function(){
+				$(this).addClass("active").siblings("div").removeClass("active");
+		})
+			
+			
+			
+		})
+	</script>
+</html>

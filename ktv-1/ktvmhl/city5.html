@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<style type="text/css">
+		body{
+			font-size: 13px;
+			
+		}
+		
+		.hea{
+		
+						background: url(img/未命名-12.fw.png) no-repeat;
+		}
+		
+		.button{
+			background: none!important;
+			color: #fff!important;
+			
+		}
+		.cont{
+
+		}
+		.title{
+			color: #fff;
+		}
+		
+		.item h2{
+			font-size: 13px;
+		}
+		.item p{
+			font-size: 12px;
+		}
+		{
+		min-width: 50px!important;	
+		min-height: 50px!important;
+		}
+		span{
+				
+				color: #999;
+				
+			}
+			.ion-ios-arrow-right{
+				position: absolute;
+				right: 5px;
+				top: 20px;
+			}
+			.ion-ios-location-outline{
+				margin-right: 10px;
+			}
+.gre{
+	color: #999;
+}
+.right{
+	position:fixed!important;
+	right: 0;
+	/*height: 600px;*/
+	width: 15px;
+
+	z-index: 999;
+}
+.right ul li{
+	height: 18px;
+}
+.right ul li a{
+	text-decoration: none;
+	color: #000;
+	font-family: "宋体";
+	
+}
+.al{
+	height: 600px;
+	width: 15px;
+	position: absolute;
+	right: 0;
+	top:130px;
+	
+}
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="hea">
+			<i class="button icon  ion-ios-arrow-left"></i>
+			<h1 class="title">选择城市</h1>
+		</ion-header-bar>
+		<ion-content class="cont">
+			
+		<ion-list>
+			
+	<ion-item class="item-divider gre">
+			<i class="icon ion-ios-location-outline"></i><span id="">
+				当前定位城市
+			</span>
+	</ion-item>
+	 <ion-item>
+	 郑州市
+	 </ion-item>
+<ion-item class="item-divider">
+		A
+	</ion-item>
+	 <ion-item>
+	 	鞍山
+	 </ion-item>
+	  <ion-item>
+	 	安庆
+	 </ion-item>
+	  <ion-item>
+	 	安阳
+	 </ion-item>
+	  <ion-item>
+	 	阿克苏
+	 </ion-item>
+	  <ion-item>
+	 阿拉善盟
+	 </ion-item>
+	  <ion-item>
+	 	阿吉
+	 </ion-item>
+	 <ion-item class="item-divider">
+		B
+	</ion-item>
+	  <ion-item>
+	 	北京
+	 </ion-item>
+	   <ion-item>
+	 	保定
+	 </ion-item>
+	   <ion-item>
+	 	包头
+	 </ion-item>
+	   <ion-item>
+	 	宝鸡
+	 </ion-item>
+	   <ion-item>
+	 	蚌埠
+	 </ion-item>
+	   <ion-item>
+	 	滨州
+	 </ion-item>
+		</ion-list>
+		</ion-content>
+		
+		<div class="al">
+			
+		
+<div class="right">
+	<ul>
+		<li><a href="#">*</a></li>
+		<li><a href="#">A</a></li>
+		<li><a href="#">B</a></li>
+		<li><a href="#">C</a></li>
+		<li><a href="#">D</a></li>
+		<li><a href="#">E</a></li>
+		<li><a href="#">F</a></li>
+		<li><a href="#">G</a></li>
+		<li><a href="#">H</a></li>
+		<li><a href="#">I</a></li>
+		<li><a href="#">J</a></li>
+		<li><a href="#">K</a></li>
+		<li><a href="#">L</a></li>
+		<li><a href="#">M</a></li>
+		<li><a href="#">N</a></li>
+		<li><a href="#">O</a></li>
+		<li><a href="#">P</a></li>
+		<li><a href="#">Q</a></li>
+		<li><a href="#">R</a></li>
+		<li><a href="#">S</a></li>
+		<li><a href="#">T</a></li>
+		<li><a href="#">W</a></li>
+		<li><a href="#">X</a></li>
+		<li><a href="#">Y</a></li>
+		<li><a href="#">Z</a></li>
+		<li><a href="#">#</a></li>
+
+	</ul>
+</div>
+</div>
+			   
+
+		<script type="text/javascript">
+			var app=angular.module("myApp",["ionic"]);
+			app.controller("myCtrl",function(){
+				
+			})
+		</script>
+	</body>
+</html>

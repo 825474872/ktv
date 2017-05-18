@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	    <script src="js/lib/jquery-1.9.0.min.js"></script>	    
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		box-sizing: border-box;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    			box-sizing: border-box;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    	.bar-light{
+	    		width: 100%;
+	    		background-image: url(images/imgd/top.png)!important;
+	    		background: none;
+	    		background-repeat: no-repeat;
+	    		background-size: cover;
+	    	}
+	    	/*tab切换部分*/
+	    	.list2{
+	    		margin-top: 10px;
+	    		background: none;
+	    	}
+	    	.item2{	
+	    		width: 90%;
+	    		height: 20px;
+	    		margin: 0;
+	    		padding: 0;
+	    		border: none;
+	    		margin: auto;
+	    		background: none;
+	    	}
+	    	.list2 .item2 ul li{
+	    		width: 33.33%;
+	    		height: 20px;
+	    		float: left;
+	    		line-height: 18px;
+	    		text-align: center;
+	    		
+	    	}
+	    	.list2 .item2 ul li a{
+	    		width: 100%;
+	    		height: 19px;
+	    		display: inline-block;
+	    		font-size: 12px;
+	    		border: 1px solid #ccc;
+	    		color: blueviolet;
+	    		background: white;
+	    	}
+	    	 .li_a1{
+	    	 	border-radius: 3px 0 0 3px;
+	    	 }
+	    	 .li_a2{
+	    	 	border-left: none!important;
+	    	 }
+	    	 .li_a3{
+	    	 	border-radius: 0 3px 3px 0;
+	    	 	border-left: none!important;
+	    	 }
+	    	/*a的被选中样式*/
+	    	.list2 .item2 ul li.active a{
+	    		color: white;
+	    		background: blueviolet;	
+	    		border-bottom: 1px solid blueviolet!important;
+	    	}
+	    	/*图片大小控制*/
+	    	.item .ng1{
+	    		width: 100px;
+	    		height: 100px;
+	    	}
+	    	.item .ng2{
+	    		width: 50px;
+	    		height: 50px;
+	    		position: absolute;
+	    		left: 0;
+	    		right: 0;
+	    		top: 0;
+	    		bottom: 0;
+	    		margin: auto;
+	    	}
+	    	.item .ng3{
+	    		width: 40px;
+	    		height: 40px;
+	    	}
+	    	.item .ng4{
+	    		width: 30px;
+	    		height: 20px;
+	    		position: absolute;
+	    		left: 0;
+	    		right: 0;
+	    		top: 0;
+	    		bottom: 0;
+	    		margin: auto;
+	    	}
+	    	/*未使用*/
+	    	.item3{
+	    		width: 90%;
+	    		padding: 0;
+	    		margin: auto;
+	    		margin-top: 15px;
+	    		border-radius: 10px;
+	    		position: relative;
+	    		overflow: hidden;
+	    		/*display: none;*/
+	    	}
+	    	.nav{
+	    		width: 100px;
+	    		height: 100px;
+	    		float: left;
+	    		position: relative;	
+	    	}
+	    	.item3 h2{
+	    		margin-left: 110px;
+	    		color: #f15a5a;
+	    		font-size: 20px;
+	    		line-height: 40px;
+	    	}
+	    	.item3 p{
+	    		margin-left: 110px;
+	    		line-height: 20px;
+	    	}
+	    	.item3 .hR{
+	    		width: 42px;
+	    		height: 42px;
+	    		/*background: #ccc;*/
+	    		position: absolute;
+	    		right: 0;
+	    		bottom: 0px;
+	    	}
+	    	/*已使用*/
+	    	/*已过期*/
+	    	/*公共类*/
+	    	.cosplay{
+	    		display: block!important;
+	    	}
+	    	/*加入购物车的模态框*/
+	    	.popup {
+			    width: 100%!important;
+			    max-width: 100%;
+			    max-height: 90%;
+			    border-radius: 0;
+			    background-color: rgb(255,255,255)!important;
+			    position: absolute;
+			    bottom: 0;
+			    left: 0;
+			    }
+			.popup-head{display: none!important;}
+	    </style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="bar-light" align-title="center">
+			<button class="button button-clear"><i class="icon ion-ios-arrow-left" style="color: white!important;"></i></button>
+			<h1 class="title" style="color: white!important;">详情</h1>
+		</ion-header-bar>
+		<ion-content>
+			<div class="list list2">
+					<div class="item item2">
+						<ul>
+							<li class="active"><a href="javascript:;" class="li_a1">未使用（2）</a></li>
+							<li><a href="javascript:;" class="li_a2">已使用（2）</a></li>
+							<li><a href="javascript:;" class="li_a3">已过期（2）</a></li>
+						</ul>
+					</div>
+					<div class="cosplay" style="display: none;">
+					<div class="item item3">
+						<a class="nav">
+							<img src="images/imgd/c-9.png" class="ng1"/>
+							<img src="images/imgd/c-2.png" class="ng2"/>
+						</a>
+							<h2>满99减5</h2>
+           					<p>使用范围：正大KTV设备公司</p>
+							<p>截止日期：2016.05.01</p>
+							<a class="hR">
+								<img src="images/imgd/c-11.png" class="ng3"/>
+								<img src="images/imgd/c-10.png" class="ng4"/>
+							</a>	
+					</div>
+					<div class="item item3">
+						<a class="nav">
+							<img src="images/imgd/c-9.png" class="ng1"/>
+							<img src="images/imgd/c-2.png" class="ng2"/>
+						</a>
+							<h2>满99减5</h2>
+           					<p>使用范围：正大KTV设备公司</p>
+							<p>截止日期：2016.05.01</p>
+							<a class="hR">
+								<img src="images/imgd/c-11.png" class="ng3"/>
+								<img src="images/imgd/c-10.png" class="ng4"/>
+							</a>
+					</div>
+					</div>
+					<!--第二部分-->
+					<div style="display: none;">
+					<div class="item item3 item4">
+						<a class="nav">
+							<img src="images/imgd/c-12.png" class="ng1"/>
+							<img src="images/imgd/c-2.png" class="ng2"/>
+						</a>
+							<h2 style="color: #666;">满99减5</h2>
+           					<p>使用范围：正大KTV设备公司</p>
+							<p>截止日期：2016.05.01</p>
+							<a class="hR">
+								<img src="images/imgd/c-6.png" class="ng3"/>
+								<img src="images/imgd/c-5.png" class="ng4"/>
+							</a>
+					</div>
+					<div class="item item3 item4">
+						<a class="nav">
+							<img src="images/imgd/c-12.png" class="ng1"/>
+							<img src="images/imgd/c-2.png" class="ng2"/>
+						</a>
+							<h2 style="color: #666;">满99减5</h2>
+           					<p>使用范围：正大KTV设备公司</p>
+							<p>截止日期：2016.05.01</p>
+							<a class="hR">
+								<img src="images/imgd/c-6.png" class="ng3"/>
+								<img src="images/imgd/c-5.png" class="ng4"/>
+							</a>
+					</div>
+					</div>
+					<!--第三部分-->
+					<div style="display: none;">
+					<div class="item item3 item5">
+						<a class="nav">
+							<img src="images/imgd/c-12.png" class="ng1"/>
+							<img src="images/imgd/c-2.png" class="ng2"/>
+						</a>
+							<h2 style="color: #666;">满99减5</h2>
+           					<p>使用范围：正大KTV设备公司</p>
+							<p>截止日期：2016.05.01</p>
+							<a class="hR">
+								<img src="images/imgd/c-6.png" class="ng3"/>
+								<img src="images/imgd/c-7.png" class="ng4"/>
+							</a>
+					</div>
+					<div class="item item3 item5">
+						<a class="nav">
+							<img src="images/imgd/c-12.png" class="ng1"/>
+							<img src="images/imgd/c-2.png" class="ng2"/>
+						</a>
+							<h2 style="color: #666;">满99减5</h2>
+           					<p>使用范围：正大KTV设备公司</p>
+							<p>截止日期：2016.05.01</p>
+							<a class="hR">
+								<img src="images/imgd/c-6.png" class="ng3"/>
+								<img src="images/imgd/c-7.png" class="ng4"/>
+							</a>
+					</div>
+					</div>
+					
+			</div>
+		</ion-content>
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope,$ionicPopup){
+			$scope.show = function() {
+            $ionicPopup.show({
+                templateUrl:"template/shop.html",
+                scope:$scope,
+                buttons:[
+                    {text:"取消", type:"button-stable"}
+                ]
+            });
+        }
+		})
+	</script>
+	<script>
+		$(function(){
+			$(".list2 .item2 ul li").click(function(){
+				var dex=$(this).index()*3+1;
+//				alert(dex);
+				$(this).addClass("active").siblings("li").removeClass("active");
+				$(".list2 div").eq(dex).addClass("cosplay").siblings("div").removeClass("cosplay");
+		})
+			
+			
+			
+		})
+	</script>
+</html>

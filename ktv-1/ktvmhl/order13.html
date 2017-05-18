@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<style type="text/css">
+		body{
+			font-size: 13px;
+		}
+		.item h2{
+			font-size: 13px;
+			width: 100%;
+		}
+		
+		.hea{
+			height: 50px!important;
+			
+						background-image: url(images/imge/未命名-12.fw.png)!important;
+						background-size: cover;
+		}
+		
+		.le{
+			background: none!important;
+			color: #fff!important;
+			
+		}
+		.title{
+			font-size: 18px!important;
+			color: #fff;
+
+			
+		}
+		.ion-ios-arrow-right{
+				position: absolute;
+				width: 30px;
+				right: 10px;
+				top: 20px;
+			}
+			a{
+				text-decoration: none;
+				font-size: 13px!important;
+				color: #999;
+				text-align: center;
+
+ 
+				display: inline-block;
+				width: 30%;
+				
+			}
+			.item span{
+				float: right;
+			}
+			.fu{
+				width: 25px;
+				height: 25px;
+				min-height:25px;
+				min-width: 25px;
+				line-height: 18px;
+				text-align: center;
+				padding: 0;
+				float: right;
+			}
+.in{
+	background: #F2F2F2;
+	height: 25px!important;
+	text-align: center;
+	min-height: 25px;
+				float: right;
+	width: 40px;
+	
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.que{
+	color: white;
+	background: #663399;
+}
+.list{
+	height: 100%!important;
+	min-height: 100%!important;
+}
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="hea">
+            <i class="button icon  ion-ios-arrow-left le"></i><h1 class="title">确认订单</h1>
+        </ion-header-bar>
+        <ion-content style="height: 100%;min-height: 100%;">
+        	
+
+<ion-list >
+	<ion-item class="item-divider">
+		
+	</ion-item>
+	<ion-item>
+		<h2>麦嘎量贩式KTV158元套餐欢唱时段2选1<span>￥158</span></h2>
+	</ion-item>
+	<ion-item class="item-input-inset">
+		<h2> &nbsp;&nbsp;数量   <button class="button fu">-</button>
+			<input type="text" value="1" class="item-input-wrapper in"/>
+			<button class="button fu">+</button>
+		</h2>
+	</ion-item>
+		<ion-item>
+		<h2>优惠券<span>无可用</span></h2>
+	</ion-item>
+	<ion-item>
+		<h2>小计<span>￥153</span></h2>
+		
+	</ion-item>
+		<ion-item class="item-divider">
+		
+	</ion-item>
+	<ion-item>
+		<h2>订单合计<span>￥153</span></h2>
+		
+	</ion-item >
+		<ion-item class="item-divider" style="height: 100%;min-height: 100%;">
+		<button class="button button-block que">提交订单</button>
+	</ion-item>
+</ion-list>
+        </ion-content>
+    
+	
+		<script type="text/javascript">
+			var app=angular.module("myApp",["ionic"]);
+			    app.controller("myCtrl", function ($scope, $ionicModal) {
+ 
+    
+    });
+		</script>
+	</body>
+</html>

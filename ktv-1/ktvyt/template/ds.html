@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+		<script src="js/lib/jquery-1.9.0.min.js"></script>
+	<style type="text/css">	
+	.item{
+		border: none;
+		position: relative;
+	}
+	.item img{
+		 width:80px!important;
+		 /*margin-top: -10px;*/
+	}
+	.item p{
+		 /*margin-top: 10px;*/
+		 white-space: normal;
+		 line-height: 20px;
+		 color: black;
+		 font-size: 12px;
+		 width: 85%;
+	}
+	.item h2 span{
+		 font-size: 24px;
+		 color: blueviolet;
+	}
+	.item i{
+		width: 15px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		display: block;
+		background: white;
+		z-index: -9;
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+	/*数量加减*/
+	.it{
+		height: 16px;
+		margin-top: 10px;
+		vertical-align: middle;		
+	}
+	.it a{
+		width: 11px;
+		height: 11px;
+		line-height: 8px;
+		color: #5b5b5b;
+		border: 1px solid #666;
+		display: inline-block;
+		text-align: center;
+		/*margin-left: 10px;*/
+		float: left;
+		margin-top: 2px;
+	}  
+	.it a:hover{
+		border: 1px solid #f26521;
+	}  
+	.it input{
+		width: 31px;
+		height: 16px;
+		line-height: 15px;
+		margin-left: 10px;
+		border: 1px solid #ccc;
+		text-align: center;
+		padding-top: 2px;
+		float: left;
+	}
+</style>
+</head>
+	<body>
+	<div class="tttt">
+		<div class="item item-thumbnail-left">
+			<img src="images/imgd/b1.png"/>
+			<p>要想唱一首歌，首先唱歌的人一定要声情并茂！</p>
+			<i class="icon ion-ios-close-outline"></i>
+			<h2>￥<span>290</span></h2>
+		</div>
+		
+		<span>购买数量：</span>
+		
+		<div class="it">
+			<a href="javascript:;">-</a>
+			<input type="text" value="1">
+			<a href="javascript:;" style="margin-left: 10px;">+</a>
+		</div>
+	</div>
+	</body>
+	<script>
+	$(function(){
+		$(".it a").click(function(){
+			var dex=$(this).index();
+//			alert(dex);
+			var t=$(".it input").val();
+//			alert(t);
+			if(dex==0){
+				t--;
+			}else{
+				t++;
+			}
+			$(".it input").val(t);
+		})
+		$(".ion-ios-close-outline").click(function(){
+			$(".tttt").css("display","none");
+		})
+	})
+</script>
+</html>

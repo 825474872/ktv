@@ -1,0 +1,165 @@
+			*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		box-sizing: border-box;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    		i{font-style: normal;}
+	    	.yt-bar-light{
+	    		width: 100%;
+	    		background: orange!important;
+	    		border: none!important;
+	    	}
+	    	.yt-list{
+	    		border: none;
+	    		overflow: hidden;
+	    		position: relative;
+	    		top: -20px;
+	    		margin-top: 20px;
+	    	}
+	    	.yt-item1{
+	    		border-left: none;
+	    		border-right: none;
+	    		border-top: none;
+	    		box-sizing: border-box;
+	    		margin-top: 1px;
+	    		border-bottom: 1px solid #ccc;
+	    		padding: 4px;
+	    	}
+	    	.yt-item1 p{
+	    		margin-top: 5px;
+	    	}
+	    	.yt-item1 img{
+	    		max-width: 100px!important;
+	    		max-height: 100px!important;
+	    	}
+	    	.yt-item1 ul li{
+	    		width: 25%;
+	    		height: 30px!important;
+	    		line-height: 30px;
+	    		float: left;
+	    		text-align: center;
+	    		
+	    		
+	    	}
+	    	.yt-item1 ul li a{
+	    		width: 100%;
+	    		height: 20px!important;
+	    		display: inline-block;
+	    		line-height: 20px;
+	    		color: #ccc;
+	    		font-size: 14px;
+	    		text-align: center;
+	    		border-left: 1px solid #ccc;
+	    		/*line-height: 20px;*/
+	    	}
+	    	.yt-item1 ul li a select{
+	    		width: 55%;
+	    		height: 20px!important;
+	    		border: none;
+	    		background: none;
+	    		color: #000;
+	    		font-size: 14px;
+	    		
+	    	}
+	    	/*搜索框*/
+	   		.yt-inset{
+	   			background: orange;
+	   			margin-top: -1px;
+	   		}
+	   		.yt-wrapper{
+	   			background: white;
+	   		}
+	   		/*********02**********/
+	   		
+	   		.yt-item{
+	   			padding-top: 0;
+	   			padding-top: 10px;
+	   			padding-bottom: 0;
+	   			padding-bottom: 10px;
+	   		}
+	   		.yt-item_Left{
+	   			width: 30%;
+	   			height: 80px;
+	   			/*background: yellow;*/	
+	   			float: left;
+	   			/*border-bottom: 1px solid #ccc;*/
+	   		}
+	   		.yt-item_Right{
+	   			width: 70%;
+	   			height: 110px;
+	   			/*background: blue;*/
+	   			/*border-bottom: 1px solid #ccc;*/
+	   			float: right;
+	   			padding-left: 10px;
+	   		}
+	   		.yt-item_Right h2{
+	   			width: 100%;
+	   			height: 30px;
+	   			line-height: 30px;
+	   			font-size: 14px;
+	   		}
+	   		.yt-item_Right h2 span{
+	   			float: left;
+	   		}
+	   		.yt-item_Right h2 a{
+	   			width: 25px;
+	   			height: 25px;
+	   			line-height: 23px;
+	   			color: white;
+	   			margin-top: 2px;
+	   			text-align: center;
+	   			margin-left: 5px;
+	   			border-radius: 20px;
+	   			border: 1px solid #ccc;
+	   			background: red;
+	   			display: block;
+	   			float: right;
+	   		}
+	   		/**************第二行*/
+	   		.yt-item_Right .yt-p_second{
+	   			width: 100%;
+	   			height: 20px;
+	   			line-height: 20px;
+	   			/*background: yellowgreen;*/
+	   		}
+	   		.yt-item_Right .yt-p_second .yt-r_ps1{
+	   			width: 120px;
+	   			height: 20px;
+	   			display: block;
+	   			margin-top: 2px;
+	   			float: left;
+	   		}
+	   		.yt-item_Right .yt-p_second .yt-r_ps2{
+	   			/*width: 60px;*/
+	   			height: 20px;
+	   			line-height: 20px;
+	   			float: right;
+	   			font-size: 14px;
+	   		}
+	   		/****************3*/
+	   		.yt-p_third{
+	   			width: 100%;
+	   			height: 30px;
+	   			line-height: 30px;
+	   		}
+	   		.yt-p_third span{
+	   			float: left;
+	   		}
+	   		.yt-p_third i{
+	   			float: right;
+	   		}
+	   		/**********************4*/
+	   		.yt-p_four{
+	   			width: 140px;
+	   			height: 24px;
+	   			border-radius: 15px;
+	   			border: 1px solid orange;
+	   			text-align: center;
+	   			line-height: 23px;
+	   			font-size: 12px!important;
+	   		}

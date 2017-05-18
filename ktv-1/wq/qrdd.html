@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+    <script src="js/lib/ionic1/js/ionic.bundle.js"></script>
+    <script src="js/lib/jquery-3.1.1.min.js"></script>
+    <style>
+        .bar .title.title-left{
+            color:white;
+            text-align: center;
+            right: 31px;
+        }
+        .news1{
+            background:url("images/imgb/未命名-16.png");
+            background-size:100%;
+        }
+        .news1 button img{
+            width:10px;
+            height:15px;
+        }
+        .title{
+            color:white;
+        }
+        body{
+            background: #f2f2f2;
+        }
+        .bar .title{
+            font-size: 20px;
+        }
+        .button{
+            min-width:30px;
+            min-height:30px;
+            line-height: 20px;
+            padding: 0;
+        }
+        .ioj{
+            float: right;
+            margin-right:10px;
+        }
+        .ioj span{
+           line-height: 30px;
+        }
+        .ioj .ios{
+            color: red
+        }
+        .ioj .sp2{
+            font-size: 20px;
+        }
+        .span3{
+            font-size: 0.8rem;
+        }
+        .button.button-block{
+            width:90%;
+            margin-left:5%;
+            background: #639;
+            border-radius: 10px;
+            color:white;
+            height:40px;
+        }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+<ion-header-bar class=" news1">
+    <button class="button button-clear"><img src="images/imgb/未命名-14.png" alt=""></button>
+    <h1 class="title">确认订单</h1>
+</ion-header-bar>
+<ion-content>
+        <ion-list>
+            <ion-item>
+                <span class="span3">麦嘎量贩式KTV158元套餐欢唱时段2选1
+                    <div class="ioj">
+                    <span>￥158</span>
+                    </div>
+                </span>
+            </ion-item>
+            <ion-item>
+                <span>数量</span>
+                <div class="ioj">
+                <button class="button" ng-click="jj()">-</button>
+                <span class="button span1">1</span>
+                <button class="button" ng-click="jia()">+</button>
+                </div>
+            </ion-item> <ion-item>
+            <span>优惠券 </span>
+            <div class="ioj">
+                <span class="ios">-5</span> &nbsp<i class="ion-chevron-right"></i>
+             </div>
+        </ion-item> <ion-item>
+            <span>小计</span>
+            <div class="ioj">
+                ￥<span class="span2">153</span>
+            </div>
+        </ion-item>
+        </ion-list>
+    <ion-list class="list2">
+        <ion-item>
+            <span>订单合计</span>
+            <div class="ioj">
+                ￥ <span class="sp2">153</span>
+            </div>
+        </ion-item>
+    </ion-list>
+    <button class="button button-block">提交订单</button>
+</ion-content>
+<script>
+    var app=angular.module("myApp",["ionic"]);
+    app.controller("myCtrl",function ($scope) {
+        var i=1
+        $scope.jj=function () {
+                i--
+            if(i<1){
+                    i=1
+            }
+                $(".ioj .span1").text(i);
+                $(".ioj .span2").text(+i*158-5);
+                $(".ioj .sp2").text(+i*158-5);
+        }
+        $scope.jia=function () {
+                 i++
+                $(".ioj .span1").text(i);
+                $(".ioj .span2").text(+i*158-5);
+            $(".ioj .sp2").text(+i*158-5);
+        }
+    })
+</script>
+</body>
+</html>

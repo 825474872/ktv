@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    	.bar-light{
+	    		width: 100%;
+	    		background-image: url(images/imgd/top.png)!important;
+	    		background: none;
+	    		background-repeat: no-repeat;
+	    		background-size: cover;
+	    	}
+	    	.list{
+	    		position: relative;
+	    		padding: 0;
+	    		border-bottom: 1px solid #ccc;
+	    		background: white;
+	    		}
+	    	.list .btn1{
+	    		width: 80px;
+	    		height: 40px;
+	    		background: #663399;
+	    		color: white;
+	    		min-height: 30px;
+	    		line-height: 40px;
+	    		font-size: 12px;
+	    		position: absolute;
+	    		right: 20px;
+	    		top: 20px;
+	    	}
+	    	.item{
+	    		width: 100%;
+	    		border:none;
+	    	}
+	    	.item1{
+	    		width: 100%;
+	    		margin-top: 10px;
+	    		padding-left: 16px;
+	    		padding-right: 10px;
+	    		font-size: 16px;
+	    	}
+	    	.item2{
+	    		width: 100%;
+	    		overflow: hidden;
+	    		}
+	    	.item2 img{
+	    		float: left;
+	    		width: 100px;
+	    		margin-left: 10px;
+	    		margin-top: 20px;
+	    	}
+	    	.item3{
+	    		width: 100%;
+	    	}
+	    	.item3 img{
+	    		width: 40px;
+	    		vertical-align: middle;
+	    		margin-left: 6px;
+	    	}
+	    	.item3 span{
+	    		height: 75px;
+	    		line-height: 75px;
+	    		color: #5b5b5b;
+	    	}
+	    </style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="bar-light" align-title="center">
+			<button class="button button-clear"><i class="icon ion-ios-arrow-left" style="color: white!important;"></i></button>
+			<h1 class="title" style="color: white!important;">发布</h1>
+			<button class="button button-clear" style="color: white!important;">发送</button>
+		</ion-header-bar>
+		<ion-content>
+			<div class="item" style="margin-bottom: 0;padding-bottom: 0;">
+			<textarea placeholder="在哪？时间？房间号？联系方式？给大家分享一下吧" style="width: 100%;height: 140px;resize: none;font-size: 16px;"></textarea>
+			<p style="width: 100%;border-bottom: 1px solid #ccc;"></p>
+			</div>
+			<div class="item" style="overflow: hidden;">
+			<div style="width: 80px;height: 80px;border: 1px dashed #ccc; float: left;position: relative;"><i class="icon ion-camera" style="width:32px;height:32px;font-size:36px;position: absolute;left: 0;top:0;right: 0;bottom: 0;margin: auto;"></i></div>
+			<h2 style="margin-left: 15px;float: left;width: 200px;margin-top: 15px;">添加图片</h2>
+			<p style="margin-left: 15px;float: left;width: 200px;margin-top: 10px;">最多3张</p>	
+			</div>
+		</ion-content>
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope){
+			
+		})
+	</script>
+</html>

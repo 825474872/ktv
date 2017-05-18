@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<style type="text/css">
+		body{
+			font-size: 13px;
+		}
+		.item h2{
+			font-size: 13px;
+			width: 100%;
+		}
+		.list{
+	height: 100%!important;
+	min-height: 100%!important;
+}
+		.hea{
+			height: 50px!important;
+			
+						background-image: url(images/imge/未命名-12.fw.png)!important;
+						background-size: cover;
+		}
+		
+		.le{
+			background: none!important;
+			color: #fff!important;
+			
+		}
+		.title{
+			font-size: 18px!important;
+			color: #fff;
+
+			
+		}
+		.ion-ios-arrow-right{
+				position: absolute;
+				width: 30px;
+				right: 10px;
+				top: 20px;
+			}
+			a{
+				text-decoration: none;
+				font-size: 13px!important;
+				color: #999;
+				text-align: center;
+
+ 
+				display: inline-block;
+				width: 30%;
+				
+			}
+			.item{
+				border: none;
+			}
+
+.que{
+	color: white;
+	background: #663399;
+}
+.item-radio input:checked + .radio-content .item-content{
+	background: none;
+}
+.yuan{
+position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+	font-size: 24px;
+	padding: 14px;
+}
+	</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="hea">
+            <i class="button icon  ion-ios-arrow-left le"></i><h1 class="title">支付订单</h1>
+        </ion-header-bar>
+        <ion-content style="height: 100%;min-height: 100%;">
+        	
+
+<ion-list >
+	<ion-item class="item-divider">
+		
+	</ion-item>
+	<ion-item>
+		<h2>麦嘎量贩式KTV158元套餐欢唱时段2选1<span>￥158</span></h2>
+	</ion-item>
+<ion-item class="item-divider">
+		选择支付方式
+	</ion-item>
+	<ion-item>
+		
+	<label class="item item-radio ng-empty ng-valid" style="border-bottom: 1px solid #ccc!important;" ng-model="choice" ng-value="A">
+		<input type="radio" name="radio-group" ng-value="A" ng-model="choice" class="ng-pristine ng-valid ng-empty ng-touched" value="on" style="">
+		<div class="radio-content" style="border-bottom: 1px solid #e0e0e0!important;"><div class="item-content disable-pointer-events" ng-transclude="">
+			<img src="images/imge/未命名-71.fw.png" style="width: 25px;"><span>
+			微信支付
+		
+		</span>
+		<i class=" icon ion-ios-circle-outline yuan "></i>
+	
+	</div>
+		
+
+		<i class="radio-icon disable-pointer-events icon ion-ios-circle-filled assertive"></i>
+	
+	</div></label>
+		<label class="item item-radio ng-empty ng-valid" style="border-top: 1px solid #f0f0f0;" ng-model="choice" ng-value="A"><input type="radio" name="radio-group" ng-value="A" ng-model="choice" class="ng-pristine ng-valid ng-empty ng-touched" value="on" style=""><div class="radio-content"><div class="item-content disable-pointer-events" ng-transclude="">
+			<img src="images/imge/未命名-70.fw.png" style="width: 25px;"><span>
+			支付宝支付
+		
+		</span>
+		<i class=" icon ion-ios-circle-outline yuan "></i>
+		
+		</div><i class="radio-icon  icon ion-ios-circle-outline "></i>
+		<i class="radio-icon disable-pointer-events icon ion-ios-circle-filled assertive "></i>
+		
+		</div></label>
+
+	</ion-item>
+		<ion-item class="item-divider" style="height: 100%;min-height: 100%;">
+		<button class="button button-block que" ng-click="openModal()">确认支付</button>
+	</ion-item>
+</ion-list>
+        </ion-content>
+    
+    
+    
+    <script type="text/ng-template" id="modal">
+    <!--<div class="modal">-->
+        
+        <ion-content
+        	 style="margin:65% auto;z-index: 99;background:#f0f0f0;text-align: center;width: 80%;">
+            <ion-list>
+                <ion-item style="background: #f0f0f0;" >
+                   支付宝支付
+                </ion-item>
+               <ion-item style="background: #f0f0f0;border-bottom:1px solid #e7e5e9;">
+               	广发银行信用卡(尾号8176)付款
+               </ion-item>
+               <ion-item>
+               	
+               </ion-item>
+                <button class="button button-positive" ng-click="back()">返回</button>
+            <button class="button button-positive" >付款</button>
+            </ion-list>
+            
+            
+        </ion-content>
+    <!--</div>-->
+</script>
+    
+	
+		<script type="text/javascript">
+			var app=angular.module("myApp",["ionic"]);
+			    
+    app.controller("myCtrl", function ($scope, $ionicModal) {
+     
+        // 初始化模态窗
+        $ionicModal.fromTemplateUrl(
+            "modal",
+            {
+                scope:$scope,
+                animation:"slide-in-top"
+            }
+        ).then(function(modal) {
+            $scope.dialog = modal;
+        });
+
+        // 打开窗口的函数
+        $scope.openModal = function() {
+            $scope.dialog.show();
+        }
+
+        // 退出模态窗
+        $scope.back = function() {
+            $scope.dialog.hide();
+            /* 模态框一旦在项目中不再需要使用，切记一定要调用remove删除*/
+            // $scope.dialog.remove();
+        }
+    });
+		</script>
+	</body>
+</html>

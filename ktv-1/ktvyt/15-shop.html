@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	    <script src="js/lib/jquery-1.9.0.min.js"></script>	    
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		box-sizing: border-box;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    			box-sizing: border-box;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    	.bar-light{
+	    		width: 100%;
+	    		/*background-image: url(images/imgd/top.png)!important;*/
+	    		background: none;
+	    		background: #F2F2F2!important;
+	    		/*background-repeat: no-repeat;
+	    		background-size: cover;*/
+	    		position: relative;
+	    	}
+	   		.ion-ios-arrow-left{
+	   			color: red;
+	   		}
+	   		.sp{
+	   			color: red;
+	   		}
+	   		/*地图部分*/
+	   		.item{
+	   			border: none;
+	   			background: #F2F2F2!important;
+	   			}
+	   		.item2{
+	   			padding-left: 0;
+	   			padding-right: 0;
+	   			padding-bottom: 0;
+	   			padding-top: 0;
+	   		}
+	   		.item3 .ps_1{
+	   			width: 100%;
+	   			text-align: center;
+	   			font-size: 24px;
+	   			height: 30px;
+	   			line-height: 30px;
+	   			white-space: normal;
+	   			color: black;
+	   			/*font-weight: bolder;*/
+	   		}
+	   		.item3 .ps_2{
+	   			width: 100%;
+	   			text-align: center;
+	   			font-size: 16px;
+	   			white-space: normal;
+	   			margin-top: 10px;
+	   		}
+	   		.item3 p span{color: orange;}
+	   		.item3 i{
+	   			width: 30px;
+	   			height: 30px;
+	   			background: white;
+	   			border-radius: 15px;
+	   			display: block;
+	   			border: 1px solid #ccc;
+	   			text-align: center;
+	   			line-height: 25px;
+	   		}
+	   		/*填写内容*/
+	   		.item4{
+	   			text-align: center;
+	   			overflow: hidden;
+	   			border: none;
+	   			border-bottom: 1px solid #ccc;
+	   			background: white!important;
+	   		}
+	   		.item4 .ion-location{
+	   			color: red;
+	   			font-size: 30px;
+	   			float: left;
+	   		}
+	   		
+	   		.item4 h2{
+	   			width: 80%;
+	   			font-size: 20px;
+	   			text-align: left;
+	   			margin: auto;
+	   			overflow: hidden;
+	   		}
+	   		.item4 .ion-ios-close-outline{
+	   			float: right;
+	   		}
+	   		/*输入手机号*/
+	   		.item-input{
+	   			background: white!important;
+	   			margin-top: 1px;
+	   			padding-bottom: 0;
+	   			padding-top: 0;
+	   		}
+	   		.input-label{
+	   			width: 30px;
+	   			font-size: 30px;
+	   			color: green;
+	   		}
+	   		.item-input input{
+	   			width: 80%;
+	   			font-size: 16px;
+	   			text-align: left;
+	   			margin: auto;
+	   			overflow: hidden;
+	   		}
+	   		/*******************/
+	   		.item5 p{
+	   			color: cornflowerblue;
+	   		}
+	   		/*****************/
+	   		.item6{
+	   			padding-top: 0;
+	   			margin-top: 0;
+	   			margin-bottom: 0;
+	   			padding-bottom: 0;
+	   		}
+	   		.item6 .button{
+	   			padding-top: 0;
+	   			margin-top: 0;
+	   			margin-bottom: 0;
+	   			padding-bottom: 0;
+	   			color: white;
+	   			background: #ccc;
+	   		}
+	   		/*****************/
+	   		.item7 p{
+	   			color: #5B5B5B;
+	   		}
+	   		.item7 p i{
+	   			width: 30px;
+	   			color: cornflowerblue;
+	   		}
+	    </style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="bar-light">
+			<button class="button button-clear">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+			<h1 class="title">代驾</h1>
+			<button class="button button-clear">
+				<span class="sp">关闭</span>
+			</button>
+		</ion-header-bar>
+		<ion-content>
+			<div class="list">
+				<div class="item item2">
+					<img src="images/imgd/d-11.png" class="full-image"/>
+				</div>
+				<div class="item item3">
+					<i class="icon ion-person"></i>
+					<p class="ps_1">附近有<span>5</span>位司机随时接驾</p>
+					<p class="ps_2">最近司机距您<span>868米</span></p>
+				</div>
+				<div class="item item4">
+					<i class="icon ion-location"></i>
+					<i class="icon ion-ios-close-outline"></i>
+					<h2>农业路 国贸中心</h2>
+				</div>
+				
+            	<label class="item item-input">
+				    <span class="input-label icon ion-ios-telephone"></span>
+				    <input type="text" placeholder="请输入手机号！">
+  				</label>
+  				<div class="item item5">
+  					<p>39元起步，查看服务价格</p>
+  				</div>
+				<div class="item item6">
+  					<button class="button button-block">呼叫司机</button>
+  				</div>
+  				<div class="item item7">
+  					<p><i class="icon ion-android-checkbox"></i>
+  						已阅读并同意 使用规则与代驾服务协议</p>
+  				</div>
+			</div>
+			
+		</ion-content>
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope,$ionicPopup){
+			$scope.show = function() {
+            $ionicPopup.show({
+                templateUrl:"template/shop.html",
+                scope:$scope,
+                buttons:[
+                    {text:"取消", type:"button-stable"}
+                ]
+            });
+        }
+		})
+	</script>
+	<script>
+		$(function(){
+			$(".row .col").click(function(){
+				$(this).addClass("active").siblings("div").removeClass("active");
+		})
+			
+			
+			
+		})
+	</script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    	.bar-light{
+	    		width: 100%;
+	    		background-image: url(images/imgd/top.png)!important;
+	    		background: none;
+	    		background-repeat: no-repeat;
+	    		background-size: cover;
+	    	}
+	    	/*加入购物车的模态框*/
+	    	.popup {
+			    width: 100%!important;
+			    max-width: 100%;
+			    max-height: 90%;
+			    border-radius: 0;
+			    background-color: rgb(255,255,255)!important;
+			    position: absolute;
+			    bottom: 0;
+			    left: 0;
+			    }
+			.popup-head{display: none!important;}
+	    </style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="bar-light" align-title="center">
+			<button class="button button-clear"><i class="icon ion-ios-arrow-left" style="color: white!important;"></i></button>
+			<h1 class="title" style="color: white!important;">详情</h1>
+			
+			<button class="button button-clear" ng-click="show()"><i class="icon ion-share" style="color: white!important;"></i></button>
+		</ion-header-bar>
+		<ion-content>
+			<div class="list">
+				<div class="item">
+					<h2>怎样在KTV里使用K歌技巧</h2>
+					<i class="item-note" style="float: left;margin-top: 10px;font-size: 16px;">2015-08-13&nbsp;&nbsp;08:05:00</i>
+					<p style="float: left;white-space: normal;font-size: 18px;margin-top: 10px;line-height: 30px;text-indent: 2em;">怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧
+					怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧
+					怎样在KTV里使用K歌技巧</p>
+					<img src="images/imgd/b1.png" style="float: left;width: 100%;height: 260px;"/>
+					<p style="float: left;white-space: normal;font-size: 18px;margin-top: 10px;line-height: 30px;text-indent: 2em;">怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧
+					怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧怎样在KTV里使用K歌技巧
+					怎样在KTV里</p>
+				</div>
+			</div>
+		</ion-content>
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope,$ionicPopup){
+			$scope.show = function() {
+            $ionicPopup.show({
+                templateUrl:"template/shop.html",
+                scope:$scope,
+                buttons:[
+                    {text:"取消", type:"button-stable"}
+                ]
+            });
+        }
+		})
+	</script>
+</html>

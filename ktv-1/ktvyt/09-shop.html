@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	    <script src="js/lib/jquery-1.9.0.min.js"></script>
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		box-sizing: border-box;
+	    		}
+	    		body{
+	    		background: #F2F2F2;
+	    		box-sizing: border-box;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    	.bar-light{
+	    		width: 100%;
+	    		height: 365px;
+	    		background-image: url(images/imgd/b1.png)!important;
+	    		background: none;
+	    		background-repeat: no-repeat;
+	    		background-size: cover;
+	    	}
+	    	.dv{
+	    		width: 100%;
+	    		/*margin-top: 10px;*/
+	    		background: white;
+	    		overflow: hidden;
+	    	}
+	    	.list{
+	    		width: 100%;
+	    	}
+	    	.item{
+	    		white-space: normal;
+	    	}
+	    	a.item{
+	    		width: 100%;
+	    		border-left: none;
+	    		border-right: none;
+	    		border-top: none;
+	    		box-sizing: border-box;
+	    		margin-top: 0;
+	    		padding-top: 0;
+	    		margin-right: 0;
+	    		padding-right: 0;
+	    		/*margin-top: 20px;*/
+	    		
+	    		background: white;
+	    	}
+	    	.item p{
+	    		margin-top: 5px;
+	    	}
+	    	
+	    	/*tab切换部分*/
+	    	.list2{
+	    		margin: 0;
+	    		padding: 0;
+	    	}
+	    	.item2{
+	    		width: 100%;
+	    		height: 30px;
+	    		margin: 0;
+	    		padding: 0;
+	    		border: none;
+	    	}
+	    	.list2 .item2 ul li{
+	    		width: 33%;
+	    		height: 30px;
+	    		float: left;
+	    		line-height: 30px;
+	    		text-align: center;
+	    	}
+	    	.list2 .item2 ul li a{
+	    		width: 100%;
+	    		height: 20px;
+	    		display: inline-block;
+	    		line-height: 20px;
+	    		font-size: 14px;
+	    		border-left: 1px solid #ccc;
+	    		color: #5B5B5B;
+	    	}
+	    	/*a的被选中样式*/
+	    	.list2 .item2 ul li.active{
+	    		border-bottom: 1px solid blueviolet!important;
+	    	}
+	    	.list2 .item2 ul li.active a{
+	    		color: blueviolet;	
+	    	}
+	    	/*产品参数*/
+	    	
+	    	/*tab 第一个*/
+	    	.item3{
+	    		margin-top: 1px;
+	    		display: none;
+	    	}
+	    	.item3 p{
+	    		white-space: normal;
+	    		font-size: 14px;
+	    	}
+	    	.item3 p:nth-child(6){
+	    		line-height: 25px;
+	    	}
+	    	/*tab 第二个*/
+	    	.item4{
+	    		margin: 0;
+	    		padding: 0;
+	    		display: none;
+	    	}
+	    	.item4 img{
+	    		width: 100%!important;
+	    		height: 100px;
+	    	}
+	    	.item4 p{
+	    		padding-left: 15px;
+	    		padding-right: 15px;
+	    	}
+	    	/*第三个tab*/
+	    	.im{
+	    		display: none;
+	    		margin-top: 1px;
+	    	}
+	    	.item5{
+	    		border: none;
+	    	}
+	    	.item11{
+	    		width: 100%;
+	    		/*margin-top: 10px;*/
+	    		padding-left: 16px;
+	    		padding-right: 10px;
+	    		font-size: 14px;
+	    		background: white;
+	    	}
+	    	.item21{
+	    		width: 100%;
+	    		overflow: hidden;
+	    		background: white;
+	    		}
+	    	.item21 img{
+	    		float: left;
+	    		width: 60px;
+	    		height: 100%;
+	    		margin-left: 10px;
+	    		margin-top: 5px;
+	    	}
+	    	.item21 .item-note{
+	    		padding-left: 16px;
+	    		float: left!important;
+	    	}
+	    	.cosplay{
+	    		display: block;
+	    	}
+	    	/*五个小星星*/
+	    	.pro_detail_right .pro_rating { 
+				width:380px;
+				font-weight:bold;
+				float:left; 
+				display:inline;
+				margin-bottom:10px; 
+			}
+			/* 评分css */
+			.rating{
+				width:80px;
+				height:16px;
+				margin:0 0 20px 0;
+				padding:0;
+				list-style:none;
+				clear:both;
+				position:relative;
+				background: url(images/imgd/star-matrix.gif) no-repeat 0 0;
+			}
+			.nostar {background-position:0 0}
+			.onestar {background-position:0 -16px}
+			.twostar {background-position:0 -32px}
+			.threestar {background-position:0 -48px}
+			.fourstar {background-position:0 -64px}
+			.fivestar {background-position:0 -80px}
+			ul.rating li {
+				cursor: pointer;
+				float:left;
+				text-indent:-999em;
+			}
+			ul.rating li a {
+				position:absolute;
+				left:0;
+				top:0;
+				width:16px;
+				height:16px;
+				text-decoration:none;
+				z-index: 200;
+			}
+			ul.rating li.one a {left:0}
+			ul.rating li.two a {left:16px;}
+			ul.rating li.three a {left:32px;}
+			ul.rating li.four a {left:48px;}
+			ul.rating li.five a {left:64px;}
+			ul.rating li a:hover {
+				z-index:2;
+				width:80px;
+				height:16px;
+				overflow:hidden;
+				left:0;	
+				background: url(images/imgd/star-matrix.gif) no-repeat 0 0;
+			}
+			ul.rating li.one a:hover {background-position:0 -96px;}
+			ul.rating li.two a:hover {background-position:0 -112px;}
+			ul.rating li.three a:hover {background-position:0 -128px}
+			ul.rating li.four a:hover {background-position:0 -144px}
+			ul.rating li.five a:hover {background-position:0 -160px}
+
+	    	/*加入购物车按钮*/
+	    	.footer{
+	    		margin: 0;
+	    		padding: 0;
+	    	}
+	    	.row{
+	    		margin: 0;
+	    		padding: 0;
+	    		height: 60px;
+	    	}
+	    	.col{
+	    		margin: 0;
+	    		padding: 0;
+	    		padding-top: 2px;
+	    		text-align: center;
+	    		height: 100%;
+	    		font-size: 12px;
+	    		color: red;
+	    	}
+	    	.col i{
+	    		font-size: 18px;
+	    	}
+	    	.col button{
+	    		height: 100%;
+	    		width: 100%;
+	    		/*line-height: 100px;*/
+	    		float: right;
+	    		margin: 0;
+	    		border-radius: 0;
+	    		color: white;
+	    		/*padding-bottom: -20px;*/
+	    	}
+	    	/*加入购物车的模态框*/
+	    	.popup-container{
+	    		opacity: 1;
+	    		background: none;
+	    	}
+	    	.popup {
+			    width: 40%!important;
+			    max-width: 100%;
+			    max-height: 90%;
+			    border-radius: 0;
+			    background-color: none!important;
+			    }
+			.popup-head{display: none!important;}
+			/*成功添加购物车*/
+			.met{
+				width: 40%;
+				height: 80px;
+				background: rgb(0,0,0);
+				opacity: 0.8;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				color: white;
+				text-align: center;
+				z-index: 9999;
+				display: none;
+			}
+			.met i{
+				height: 40px;
+				line-height: 40px;
+				font-size: 24px;
+			}
+			.met span{
+				height: 40px;
+				line-height: 40px;
+			}
+	    </style>
+	</head>
+	<body ng-controller="myCtrl">
+		<!--模态框-->
+			<div class="met">
+				<i class="icon ion-ios-cart-outline"></i><br />
+				<span>成功添加购物车</span>						
+			</div>
+			<!--******************-->
+		<ion-header-bar class="bar-light" align-title="center" style="max-height: 400px;width: 100%;display: block;position: relative;margin: 0;padding: 0;">
+			<button class="button button-clear"><i class="icon ion-ios-arrow-left" style="color: white!important;"></i></button>
+			<button class="button button-clear"><i class="icon ion-android-share-alt" style="color: white!important;"></i></button>
+		</ion-header-bar>
+		<ion-content style="margin-top: 325px;">
+			
+				<div class="list" style="float: left;">
+					<a href="" class="item">
+						<p style="white-space: normal;color: black;font-size: 18px;line-height: 32px;width: 100%;">
+							<span style="float: left;">蔡依林全球巡回表演！</span>
+							<i class="icon ion-star" style="float: right;width: 60px;border-left: 1px solid #ccc;text-align: center;"></i>
+						</p>
+						<h2 style="margin-top: 20px; color: blueviolet;">￥<span style="font-size: 24px;">290</span></h2>
+					</a>
+					
+				</div>
+					
+				
+				<div class="list list2">
+					<div class="item item2">
+						<ul>
+							<li class="active"><a href="javascript:;" style="border: none;">产品参数</a></li>
+							<li><a href="javascript:;">图文详情</a></li>
+							<li><a href="javascript:;">用户评价</a></li>
+						</ul>
+					</div>
+					<div class="item item3 cosplay">
+						<p>演出时间：2016.06.25</p>
+						<p>演出场馆：河南省体育中心</p>
+						<p>演出时长：以现场为准</p>
+						<p>入场时间：塑料</p>
+						<p>限购：6张</p>
+						<p>儿童入场提示：1.2米以下儿童谢绝入场（儿童项目除外），1.2米以上儿童需持票入场。</p>
+					</div>
+					
+					<!--tab 第2部分-->
+					
+					<div class="item item4">
+						<img src="images/imgd/b1.png"/>
+						<p>蔡依林郑州首秀</p>
+						<p>她很努力</p>
+						<p>加油</p>
+					</div>
+					<!--tab 第3部分-->
+					<div class="im">
+					<div class="item item5 item-avatar">
+						<img src="images/imgd/b2.png"/>
+						<h2>落月摇情、</h2>
+						<p>
+							<div class="pro_rating">
+								<ul class="rating nostar">
+									<li class="one"><a href="javascript:;" title="1分">1</a></li>
+									<li class="two"><a href="javascript:;" title="2分">2</a></li>
+									<li class="three"><a href="javascript:;" title="3分">3</a></li>
+									<li class="four"><a href="javascript:;" title="4分">4</a></li>
+									<li class="five"><a href="javascript:;" title="5分">5</a></li>
+								</ul>
+							</div>
+						</p>
+						
+					</div>
+					<div class="item11">
+						晚上8点，酒吧一条街麦嘎KTV808房间，有神秘惊喜，不见不散！我的微信号：wechat0000
+					</div>
+					<div class="item21">
+					<img src="images/imgd/b1.png" style="margin-left: 16px;"/>
+					<img src="images/imgd/b1.png"/>
+					<img src="images/imgd/b1.png"/>
+					<span class="item-note">2017-06-25 11:26:57 颜色分类：基础礼盒</span>
+					</div>
+					</div>
+				
+				</div>
+				
+			
+		</ion-content>
+		<ion-footer-bar class="footer">
+		<div class="row">
+            <div class="col">
+            	<i class="icon ion-ios-cart-outline"></i><br />首页 	
+            </div>
+            <div class="col">
+            	<i class="icon ion-ios-telephone-outline"></i><br />朋友
+          	</div>
+            <div class="col col-50">
+            	<button class="button button-royal hhee" ng-click="shop()">加入购物车</button>
+            </div>
+       </div>
+		</ion-footer-bar>
+		
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope,$ionicPopup){
+			$scope.shopcartList = []; 
+			$scope.shop=function() {
+            
+            
+                //改变数量函数
+        $scope.updateCart = function(number,$index){
+            
+            }
+           
+        }
+			
+		})
+	</script>
+	<script>
+		$(function(){
+		var dex=0;	
+//			***********
+			$(".list2 .item2 ul li").click(function(){
+				var dex=$(this).index()+1;
+//				alert(dex);
+				$(this).addClass("active").siblings("li").removeClass("active");
+				$(".list2 div").eq(dex).addClass("cosplay").siblings("div").removeClass("cosplay");
+		})
+		//		星星
+		$(".pro_rating li").click(function(){
+			var t=$(this).children("a").attr("title");
+//			alert("您的评分是:"+t);
+			str1="您的评分是:"+t+"\n";
+//			alert(str);
+			var c=$(this).attr("class");
+		$(".pro_rating ul").removeClass().addClass("rating "+c+"star");
+		})	
+		//****************
+		$(".hhee").click(function(){
+			dex++
+			if(dex%2==1){
+				$(".met").css("display","block")
+			}else{
+				$(".met").css("display","none")
+			}
+			
+		})
+			
+	
+		})
+	</script>
+</html>

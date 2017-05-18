@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+	    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	    <script src="js/lib/jquery-1.9.0.min.js"></script>
+	    <style>
+	    	*{	
+	    		margin: 0;
+	    		padding: 0;
+	    		}
+	    		body{
+	    			background: #F2F2F2;
+	    		}
+	    		a{text-decoration: none;}
+	    		li{list-style: none;}
+	    		.bar-light{
+	    			
+	    		}
+	    	/*内容部分*/
+	    	
+	    </style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="bar-light" align-title="center">
+			<button class="button button-clear"><i class="icon ion-ios-arrow-left" style="color: white!important;"></i></button>
+			<button class="button button-clear"><i class="icon ion-share" style="color: white!important;"></i></button>			
+		</ion-header-bar>
+		
+		<ion-content class="container">	
+			
+		
+		</ion-content>
+		
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function($scope){
+			
+		})
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$(".list .item2 ul li").click(function(){
+				var dex=$(this).index()+1;
+//				alert(dex);
+				$(this).addClass("active").siblings("li").removeClass("active");
+				$(".list2 div").eq(dex).addClass("cosplay").siblings("div").removeClass("cosplay");
+		})
+		})
+	</script>
+</html>

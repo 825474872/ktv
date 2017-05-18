@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/lib/ionic1/css/ionic.css"/>
+		<script type="text/javascript" src="js/lib/ionic1/js/ionic.bundle.js">
+			
+		</script>
+		<script type="text/javascript" src="js/lib/jquery-2.2.4.js">
+			
+		</script>
+		<style type="text/css">
+		body{
+			font-size: 12px;
+		}
+		#bg{
+			background: url(images/imge/未命名-79.fw.png)no-repeat;
+			background-size: 100% 100%;
+			
+			margin: 3%;
+			height: 30%;
+			position: relative;
+		}
+		.item{
+			border: none;
+			margin: 0;
+		}
+		.button{
+			font-size: 14px;background: none;
+			height: 40px;
+			line-height: 40px;
+			padding: 0;
+		}
+		.ac{
+			border-bottom: 2px solid #663399;
+			color: #663399;
+		}
+#tc{
+	height: 100px;
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+padding: 5%;	
+	font-size: 12px;
+	
+}
+#xx{
+	height: 130px;
+	width: 100%;
+	margin: 0 auto;
+padding: 2%;	
+	font-size: 12px;
+	position: absolute;
+	top: 0;
+	display: none;
+	
+}
+a{
+	font-size: 13px;
+	color: #666;
+	text-decoration: none;
+}
+p{
+	font-size: 13px;
+	color: #333;
+}
+#dis{
+	float: right;
+	font-size: 11px;
+	color:#999;
+}
+.item h2{
+	color: #663399;
+	font-size: 18px;
+
+}.gou{
+	background: #663399;border-radius: 0;
+	color: white;
+	position: absolute;
+	right: 6%;
+}
+
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<ion-content>
+			<div id="bg">
+				<ion-item style="background: none;border: none;color: white;">
+				<button class="icon ion-ios-arrow-left " 
+					style="background: rgba(0,0,0,0.3);color: white;
+					border: none;width:30px;border-radius: 50%;font-size: 20px;"></button>
+				<button class="icon ion-android-share-alt " 
+					style="background: rgba(0,0,0,0.3);color: white;
+					border: none;width:30px;border-radius: 50%;font-size: 20px;float: right;"></button>
+				
+					
+				</ion-item>
+				<ion-item class="item-avatar" style="margin-top: 15%;z-index:999;background: none;border: none;">
+					<img src="images/imge/未命名-73.fw.png"/>
+				</ion-item>
+				<ion-item style="padding:0;position:absolute;bottom: 0;border:none;text-indent:14%;font-size:13px;width:100%;background: rgba(0,0,0,0.5);border: none;color: #fff;"> 
+				
+				<h4 style="color: white;margin-left: 4%;">麦嘎量贩KTV</h4>
+				<img src="images/imge/未命名-80.fw.png" style="width: 72px;margin-left: 17%;"/>4分
+				<i class="icon ion-ios-chatbubble-outline icon-top" style="float: right;margin-right: 5%;">客服</i>
+				
+				</ion-item >
+			</div>
+			
+				<ion-item style="border: none;">
+					
+					<p >
+						<i class="icon ion-ios-location-outline" style="font-size: 16px;"></i>
+						<span id="" style="display:inline-block;width:90%;font-size: 12px;">
+						郑州市管城区金水区郑花路1号丹尼斯百货花园店
+					</span>
+					<i class="icon ion-ios-telephone" style="font-size: 20px;color: #663399;"></i>
+					</p>
+				</ion-item>
+				
+<ion-item class="item-divider">
+	
+</ion-item>
+<ion-item>
+	团购(3)
+</ion-item>
+
+       <ion-item class="item-thumbnail-left item-text-wrap" >
+                    <img src="images/imge/未命名-81.fw.png" style="width: 80px;"/>
+                    <h3>麦嘎量贩式KTV158元套餐  
+                   </span></h3>
+
+                 <h2>￥<span style="font-size: 24px;">158</span>            <span id="dis">
+                   已售330
+                   </span></h2>
+                 
+                </ion-item>
+                <ion-item class="item-thumbnail-left item-text-wrap">
+                    <img src="images/imge/未命名-81.fw.png" style="width: 80px;"/>
+                    <h3>麦嘎量贩式KTV58元套餐  
+                   </span></h3>
+
+                  
+                   <h2>￥<span style="font-size: 24px;">58 </span>            <span id="dis">
+                   已售301
+                   </span></h2>
+       
+                </ion-item>
+
+ <ion-item style="color: #F1515A;font-size: 12px;text-align: center;">
+                	查看其他1个团购
+                </ion-item>
+
+
+
+
+<ion-item style="border-bottom: 1px solid #ccc;">
+	买家点评(910)
+</ion-item>
+<ion-item class="item-avatar" style="border: none;">
+                    <img src="images/imge/未命名-26.fw.png"> 
+                    <a href="#">落月遥情</a>
+                    <br />
+                    <img src="images/imge/未命名-35.fw.png" style="width: 80px;"/>
+                    <span id="">
+                    	2016-01-27
+                    </span>
+                   
+                </ion-item>
+                <ion-item style="border: none;">
+             <p>这么多人吓死宝宝了，还好大厅经理人挺好，
+                    提前给我 <br/>们安排了。服务环境都不错，特别是音响，可以说是郑州最好的。</p>
+  	</ion-item>
+  	<ion-item class="item-thumbnail-left" style="border-top: none;">
+                    <img src="images/imge/未命名-27.fw.png" alt="">
+                    <img src="images/imge/未命名-28.fw.png" style="width: 80px;">
+                    <img src="images/imge/未命名-29.fw.png" style="width: 80px;margin-left: 10px;">
+                    
+            
+                </ion-item>
+                  <ion-item class="item-avatar">
+                    <img src="images/imge/未命名-30.fw.png"> 
+                    <a href="#">周千千的妈妈</a>
+                    <br />
+                    <img src="images/imge/未命名-35.fw.png" style="width: 80px;"/>
+                    <span id="">
+                    	2016-01-27
+                    </span>
+                   
+                </ion-item>
+                      <ion-item style="border: none;">
+             <p>198的价格也很划算，还有果盘和小吃送，朋友都说里<br/>很棒，就是人太多，但也没办法，谁让人家生意好呢 。</p>
+  	</ion-item>
+  	<ion-item class="item-thumbnail-left" style="border: none;">
+                    <img src="images/imge/未命名-31.fw.png" alt="">
+                    <img src="images/imge/未命名-32.fw.png" style="width: 80px;">
+                    <img src="images/imge/未命名-33.fw.png" style="width: 80px;margin-left: 10px;">
+                    
+            
+                </ion-item>
+                <ion-item style="color: #F1515A;font-size: 12px;text-align: center;border-top: 1px solid #ccc;">
+                	查看全部532条评价
+                </ion-item>
+                <ion-item class="item-divider">
+                	<i class="icon ion-ios-location-outline" style="margin-right: 10px;"></i>
+                	附近团购
+                </ion-item>
+                <ion-item class="item-thumbnail-left item-text-wrap" >
+                    <img src="images/imge/未命名-39.fw.png" style="width: 80px;"/>
+                    <h3>最爱KTV   <span id="dis">
+                   	<500m
+                   </span></h3>
+                <p style="color: #666;">    仅售19元，价值166元4小时下午场/5小时午夜场2选1欢唱券+美食套餐</p>
+                 <h2>￥<span>19</span>            <span id="dis">
+                   已售123
+                   </span></h2>
+                 
+                </ion-item>
+                <ion-item class="item-thumbnail-left item-text-wrap">
+                    <img src="images/imge/未命名-41.fw.png" style="width: 80px;"/>
+                    <h3>糖果KTV <span id="dis">
+                   	<500m
+                   </span></h3>
+                <p style="color: #666;">    仅售58元，价值166元4小时下午场/5小时午夜场2选1欢唱券+美食套餐</p>
+                  
+                   <h2>￥<span>78 </span>            <span id="dis">
+                   已售123
+                   </span></h2>
+       
+                </ion-item>
+                
+                
+		</ion-content>
+		<ion-footer-bar>
+			
+   <a href="#" style="margin-left: 6%;"><img src="images/imge/未命名-74.fw.png" style="width: 22px;"/></a>
+   <a href="#" style="margin-left: 15%;"><img src="images/imge/未命名-75.fw.png" style="width: 22px;"/></a>
+   
+	<button class="button gou"> ￥ <span style="font-size: 20px;">198</span>&nbsp;&nbsp;立即购买</button>	
+		</ion-footer-bar>
+    
+	
+		<script type="text/javascript">
+			var app=angular.module("myApp",["ionic"]);
+			    app.controller("myCtrl", function ($scope, $ionicModal) {
+ 
+    
+    });
+    
+    $(function(){
+    	$("#tao").click(function(){
+    		$(this).addClass("ac");
+    		$("#xiao").removeClass("ac");
+    		$("#tc").css("display","block");
+    		$("#xx").css("display","none");
+    		
+    	});
+    	$("#xiao").click(function(){
+    		$(this).addClass("ac");
+    		$("#tao").removeClass("ac");
+    			$("#xx").css("display","block");
+    		$("#tc").css("display","none");
+    	});
+    })
+		</script>
+	</body>
+</html>

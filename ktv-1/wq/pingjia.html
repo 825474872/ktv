@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+    <script src="js/lib/ionic1/js/ionic.bundle.js"></script>
+    <style>
+        .bar .title.title-left{
+            color:white;
+            text-align: center;
+            right: 31px;
+        }
+        .news1{
+            background:url("images/imgb/未命名-16.png");
+            background-size:100%;
+        }
+        .news1 button img{
+            width:10px;
+            height:15px;
+        }
+        .title{
+            color:white;
+        }
+        body{
+            background: #f2f2f2;
+        }
+        .bar .title{
+            font-size: 20px;
+        }
+        .item-thumbnail-left h3{
+            margin-top:15px;
+            font-size: 20px;
+            color: #639;
+        }
+        .item-thumbnail-left img:last-of-type{
+            position: absolute;
+            top:30px;
+            right:10px;
+            width:65px;
+            height:46px;
+        }
+        .item{
+            margin-top:10px;
+        }
+        button.button-clear{
+            margin-top:0px;
+        }
+        .button-clear.button-clear{
+            color:white;
+        }
+        .imgio{
+            width:20px;
+            height:20px;
+        }
+        .spanii{
+            color: #ccc;
+        }
+        .item2 img{
+            width:80px;
+            height:80px;
+        }
+    </style>
+</head>
+<body>
+<ion-header-bar class=" news1">
+    <button class="button button-clear"><img src="images/imgb/未命名-14.png" alt=""></button>
+    <h1 class="title">订单详情</h1>
+    <button class="button button-clear">发布</button>
+</ion-header-bar>
+<ion-content>
+    <ion-list>
+        <ion-item class="item-thumbnail-left">
+            <img src="images/imgb/未命名-53.png" alt="">
+            <h2>歌秀主体量贩KTV</h2>
+            <p>1张</p>
+            <h3>￥29.9 </h3>
+            <img src="images/imgb/未命名-46.png" alt="">
+        </ion-item>
+        <ion-item>
+            <span>整体评价</span>
+            <img src="images/imgb/未命名-63.png" alt="" class="imgio">
+            <img src="images/imgb/未命名-63.png" alt="" class="imgio">
+            <img src="images/imgb/未命名-63.png" alt="" class="imgio">
+            <img src="images/imgb/未命名-63.png" alt="" class="imgio">
+            <img src="images/imgb/未命名-63.png" alt="" class="imgio">
+        </ion-item>
+        <ion-item class="item2">
+            <span class="spanii">玩的怎么样？和大家分享一下吧~</span><br><br><br><br><br><br>
+            <hr>
+            <img src="images/imgb/未命名-64.png" alt="">
+            <img src="images/imgb/未命名-65.png" alt="">
+            <img src="images/imgb/未命名-65.png" alt="">
+
+
+        </ion-item>
+    </ion-list>
+</ion-content>
+<script>
+    var app=angular.module("myApp",["ionic"])
+</script>
+</body>
+</html>

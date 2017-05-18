@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+		<script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	</head>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.button{
+			background-color: #F2F2F2;
+			color: #fff;
+			border-radius: 50%;
+		}
+		.content{
+			background-image: url(imgf/dt.png);
+			background-size: 100% 100%;
+		}
+	</style>
+	<body ng-controller="myCtrl">
+		
+		<ion-content class="content">
+			 <button class="button button-small icon ion-chevron-left""></button>       
+		</ion-content>
+	</body>
+	<script>
+	     var app=angular.module("myApp",["ionic"]);
+	     app.controller("myCtrl",function($scope){
+	     });
+	</script>
+</html>
